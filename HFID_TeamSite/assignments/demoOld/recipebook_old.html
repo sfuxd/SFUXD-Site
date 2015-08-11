@@ -1,0 +1,134 @@
+<HTML>
+	<head>			
+		<link rel="stylesheet" href="recipebook.css">
+	</head>
+	<body>
+
+		<!--TODO: Add stars for favorites, fix tab shape, and resize photos.-->
+	
+		<div class = "template-div">
+		
+			<!-- top div-->
+			<div class = "top-row">
+				<div class = "homeButton"><a href="mainpage.html">Home</a></div>
+
+				<div class = "vertical-buttons">
+					<div class = "genericButton">Dietary Needs</div>
+					<div class = "genericButton">Upload New Recipe</div>
+				</div>
+			
+				<div class = "pageTitle"><h1>Recipe Book</h1></div>
+				
+				<!-- filter box-->
+				<div class = "filterBox">
+					<div class = "smallHeading">Filter</div>
+					<div class = "filterRow">
+						Favorites
+						<input type = "checkbox" id = "checkbox" onclick="checkBox()">
+					</div>
+					<div class = "filterRow">
+						<div class = "inputBox">Must Have: </div><div class = "inputBox"><input type="text" name="Must Have" size="10" onkeypress="mustHaveFunction(event)"></div>
+					</div>
+					<div class = "filterRow">
+						<div class = "inputBox">Can't Have: </div><div class = "inputBox"><input type="text" name = "Can't Have" size="10" onkeypress="mustHaveFunction(event)"></div>
+					</div>
+				</div>
+
+			</div>
+			
+			<!-- tabs div-->
+			<div class = "tabs">
+				<div class = "recipeTab">All</div>
+				<div class = "recipeTab">Dessert</div>
+				<div class = "recipeTab">Asian Fusion</div>
+				<div class = "recipeTab">Italian</div>
+				<div class = "recipeTab">+</div>
+			</div>
+			
+			<!-- recipebook div-->
+			<div class = "recipeBook">
+			
+				<!-- recipe column one-->
+				<div class = "recipeColumn"> 
+					<div class = "recipeCard">
+						Gingerbread Cookies 
+						<img src="../../revisedMockups/assets/gingerbread.jpg" width="150px"> 
+						<!-- <div class = "saveButton">Save it!</div> 
+						<div class = "makeButton">Make</div>-->
+					</div>
+					<div class = "recipeCard">
+						Cinnamon Rolls
+						<img src="../../revisedMockups/assets/cinnamon Rolls.jpg" width="150px">
+						<!-- <div class = "saveButton">Save it!</div> 
+						<div class = "makeButton">Make</div>-->
+					</div>
+				</div>
+				
+				<!-- recipe column two-->
+				<div class = "recipeColumn">
+					<div class = "recipeCard">
+						Almond Lace Cookies
+						<img src="../../revisedMockups/assets/orangeAlmondLaceCookies.jpg" width="150px">
+						<div class = "saveButton">Save it!</div> 
+						<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>
+					</div>
+					<div class = "recipeCard">
+						Raspberry Cupcakes
+						<img src="../../revisedMockups/assets/raspberry cupcakes.jpg" width="150px">
+						<div class = "saveButton">Save it!</div> 
+						<div class = "makeButton">Make</div>
+					</div>
+				</div>
+				
+				<!-- recipe column three-->
+				<div class = "recipeColumn">
+					<div class = "recipeCard">
+						Chocolate Swirl Strawberries
+						<img src="../../revisedMockups/assets/strawberries.jpg" width="150px">
+						<div class = "saveButton">Save it!</div> 
+						<div class = "makeButton">Make</div>
+					</div>
+					<div class = "recipeCard">
+						Halloween Cookies
+						<img src="../../revisedMockups/assets/halloween cookies.jpg" width="150px">
+						<div class = "saveButton">Save it!</div> 
+						<div class = "makeButton">Make</div>
+					</div>
+				</div>
+				
+				<!-- recipe column four-->
+				<div class = "recipeColumn">
+					<div class = "recipeCard">
+						Rainbow Cake
+						<img src="../../revisedMockups/assets/rainbow cake.jpg" width="150px">
+						<div class = "saveButton">Save it!</div> 
+						<div class = "makeButton">Make</div>
+					</div>
+					<div class = "recipeCard">
+						Apple Pie
+						<img src="../../revisedMockups/assets/apple pie.jpg" width="150px">
+						<div class = "saveButton">Save it!</div> 
+						<div class = "makeButton">Make</div>
+					</div> 
+				</div>
+				
+				<!-- recipe column five-->
+				<div class = "recipeColumn">
+					<div class = "recipeCard">
+						Cheesecake
+						<img src="../../revisedMockups/assets/cheesecake.jpg" width="150px">
+						<!-- <div class = "saveButton">Save it!</div> 
+						<div class = "makeButton">Make</div>-->
+					</div>
+					<div class = "recipeCard">
+						Tiramisu
+						<img src="../../revisedMockups/assets/tiramisu.jpg" width="150px">
+						<!-- <div class = "saveButton">Save it!</div> 
+						<div class = "makeButton">Make</div>-->
+					</div>
+				</div>	
+			</div>
+		</div>
+	<script src="recipeBookScript.js"></script>
+	</body>
+</HTML>

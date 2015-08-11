@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../../static/css/demo.css">
+		<script src="../../static/js/jquery.min.js" type="text/javascript"></script>
+		<script src="../../static/js/jqueryUI.js" type="text/javascript"></script>
+		<script src="../../static/js/timepicker.js" type="text/javascript"></script>
+		<style>
+		input[type="text"]{
+			display:inline-block;
+			float:center;
+			background: #FFFFFF;
+			border: 2px solid #000000;
+			padding:7px;
+			color: #000000;
+			width: 430px;
+			text-align:left;
+			font-family:Trebuchet MS;
+			font-size:18px;
+		}	
+		</style>
+		
+		<script type="text/javascript">
+			function removeA(arr){
+			    var what, a= arguments, L= a.length, ax;
+			    while(L> 1 && arr.length){
+			        what= a[--L];
+			        while((ax= arr.indexOf(what))!= -1){
+			            arr.splice(ax, 1);
+			        }
+			    }
+			    return arr;
+			}
+			
+			info = {
+				'friends':[],
+				'recipes':[],
+				'name':'',
+				'date':'',
+				'time':'',
+				'location':''
+				};
+			tabs = new Array('#nameTab', '#recipeTab', '#friendsTab', '#dateTab', '#timeTab', '#locationTab', '#summaryTab');
+			blocks = new Array('#nameBlock', '#recipeBlock', '#friendsBlock', '#dateBlock', '#timeBlock', '#locationBlock', '#summaryBlock');
+			
+			
+			function toggle_visibility(idt, idb) {
+				for(i=0;i<tabs.length;i++){
+					$(blocks[i]).css('display', 'none');
+					$(tabs[i]).css('margin', '0px -5px 0px 0px');
+					$(tabs[i]).css('width', '180px');
+					$(tabs[i]).css('height', '45px');
+					$(tabs[i]).css('background', '#BBBBBB');
+					$(tabs[i]).css('border', '2px none');
+				}
+				$(idb).css('display', 'inline-block');
+				$(idt).css('margin', '0px -5px 0px 0px');
+				$(idt).css('width', '182px');
+				$(idt).css('height', '43px');
+				$(idt).css('background', '#FFFFFF');
+				$(idt).css('border', '2px none solid none solid');
+				
+				if (idt === '#summaryTab') {
+					$('#sName').html($('#nameTextBox').val());
+					$('#sDate').html($('#eDate').html());
+					$('#sTime').html($('#timeTextBox').val());
+					$('#sLocation').html($('#locationTextBox').val());
+				}
+			}
+			
+			function toggleFriend(f){
+				if($(f).css('border-top-style') === 'none'){
+					$(f).css('border', '2px solid #00CC00');
+					$(f).css('margin-top', '3px');
+					$(f).css('margin-right', '-2px');
+					$(f).css('margin-bottom', '3px');
+					$(f).css('margin-left', '-2px');
+					info.friends.push($(f + ' > .friendTag').html());
+				} else {
+					$(f).css('border', 'none');
+					$(f).css('margin-top', '5px');
+					$(f).css('margin-right', '0px');
+					$(f).css('margin-bottom', '5px');
+					$(f).css('margin-left', '0px');
+					removeA(info.friends, $(f + ' > .friendTag').html());
+				}
+				$('#eFriends').html(info.friends.join(", "));
+			}
+			
+			function toggleDate(d) {
+				date = "10-" + d.toString().slice(1) + "-12";
+				info.date = date;
+				$('.date').css('background', '#CCCCCC');
+				$('#'+d.toString()).css('background', 'green');
+				$('#eDate').html(date);
+			}
+			
+			function toggleTime(t) {
+				
+				
+			}
+			
+			$(document).ready(function() {
+				$('#basic_example_2').datetimepicker();
+				$('#timeTextBox').keypress(function(e) {
+					if (e.which == 13) {
+						toggle_visibility('#locationTab', '#locationBlock');
+						$('#eTime').html($('#timeTextBox').val());
+					}
+				});
+				$('#nameTextBox').keypress(function(e) {
+					if (e.which == 13) {
+						console.log("name");
+						toggle_visibility('#recipeTab', '#recipeBlock');
+						$('#eName').html($('#nameTextBox').val());
+					}
+				});
+				$('#locationTextBox').keypress(function(e) {
+					if (e.which == 13) {
+						toggle_visibility('#summaryTab', '#summaryBlock');
+						$('#eLocation').html($('#locationTextBox').val());
+					}
+				});
+			});
+			
+		</script>
+		
+	</head>
+	
+	<body>
+		
+		<div style="position:relative; margin:40px 0px 0px 40px">
+			<img class="ipad-img" src="../../static/images/prototype/ipadRev.png">
+			<div class="template-div">  <!--756 by 576-->
+				<div class="blueBody">
+					<!-- PUT STUFF HERE -->
+					<div class="createEventHomeButtonDiv">
+						<a href="mainpage.html"><div class="homeButton">Home</div></a>
+					</div>	
+						
+					<center><div class = "pageTitle">Create Event</div></center>
+					
+					
+					<div class="eventBox">
+						<div class="nav-bar">
+							<a class="select" onclick="toggle_visibility('#nameTab', '#nameBlock');">
+								<div class="nav-bar-link-2" id="nameTab">
+									<div>Event Name</div>
+									<div id="eName"></div>
+								</div>
+							</a>
+							<a class="select" onclick="toggle_visibility('#recipeTab', '#recipeBlock');">
+								<div class="nav-bar-link" id="recipeTab">
+									<div>Recipes</div>
+									<div id="eRecipes"></div>
+								</div>
+							</a>
+							<a class="select" onclick="toggle_visibility('#friendsTab', '#friendsBlock');">
+								<div class="nav-bar-link" id="friendsTab">
+									<div>Invited Friends</div>
+									<div id="eFriends"></div>
+								</div>
+							</a>
+							<a class="select" onclick="toggle_visibility('#dateTab', '#dateBlock');">
+								<div class="nav-bar-link" id="dateTab">
+									<div>Date</div>
+									<div id="eDate"></div>
+								</div>
+							</a>
+							<a class="select" onclick="toggle_visibility('#timeTab', '#timeBlock');">
+								<div class="nav-bar-link" id="timeTab">
+									<div>Time</div>
+									<div id="eTime"></div>
+								</div>
+							</a>
+							<a class="select" onclick="toggle_visibility('#locationTab', '#locationBlock');">
+								<div class="nav-bar-link" id="locationTab">
+									<div>Location</div>
+									<div id="eLocation"></div>
+								</div>
+							</a>
+							<a class="select" onclick="toggle_visibility('#summaryTab', '#summaryBlock');">
+								<div class="nav-bar-link" id="summaryTab">
+									<div>Summary</div>
+									<div id="eSummary"></div>
+								</div>
+							</a>
+						</div>
+						<div class="nav-bar-toggle-2" id="nameBlock">
+							<div class="headingSmall">Title your event!</div>
+							<input id="nameTextBox" type="text" name="eventTitle">
+						</div>
+						<div class="nav-bar-toggle" id="recipeBlock">
+							<div class="recipeBox">
+								<div class="headingSmall">Recipes already selected:</div>
+							</div>
+							<a href="recipebook.html"><div class="uploadRecipeButton">Choose another recipe</div></a>
+						</div>
+						<div class="nav-bar-toggle" id="friendsBlock">
+							<div class="headingSmall">Tap friends to invite them:</div>
+							<div class="friendsBox">
+								<a class="select" onclick="toggleFriend('#allie');"><div class="friendBlock" id="allie">
+									<div class="friend"><img src="../../static/images/prototype/people/allie.jpg" width="90px"></div>
+									<div class="friendTag">Allie S.</div>
+								</div></a>
+								<a class="select" onclick="toggleFriend('#bob');"><div class="friendBlock" id="bob">
+									<div class="friend"><img src="../../static/images/prototype/people/bob.jpg" width="90px"></div>
+									<div class="friendTag">Bob R.</div>
+								</div></a>
+								<a class="select" onclick="toggleFriend('#paul');"><div class="friendBlock" id="paul">
+									<div class="friend"><img src="../../static/images/prototype/people/paul.jpg" width="90px"></div>
+									<div class="friendTag">Paul K.</div>
+								</div></a>
+								<a class="select" onclick="toggleFriend('#sara');"><div class="friendBlock" id="sara">
+									<div class="friend"><img src="../../static/images/prototype/people/sara.jpg" width="90px"></div>
+									<div class="friendTag">Sara Y.</div>
+								</div></a>
+								<a class="select" onclick="toggleFriend('#deirdre');"><div class="friendBlock" id="deirdre">
+									<div class="friend"><img src="../../static/images/prototype/people/deirdre.jpg" width="90px"></div>
+									<div class="friendTag">Deirdre O.</div>
+								</div></a>
+								<a class="select" onclick="toggleFriend('#joe');"><div class="friendBlock" id="joe">
+									<div class="friend"><img src="../../static/images/prototype/people/joe.jpg" width="90px"></div>
+									<div class="friendTag">Joe F.</div>
+								</div></a>
+								<a class="select" onclick="toggleFriend('#gina');"><div class="friendBlock" id="gina">
+									<div class="friend"><img src="../../static/images/prototype/people/gina.jpg" width="90px"></div>
+									<div class="friendTag">Gina H.</div>
+								</div></a>
+								<a class="select" onclick="toggleFriend('#lisa');"><div class="friendBlock" id="lisa">
+									<div class="friend"><img src="../../static/images/prototype/people/lisa.jpg" width="90px"></div>
+									<div class="friendTag">Lisa S.</div>
+								</div></a>
+								<a class="select" onclick="toggleFriend('#tina');"><div class="friendBlock" id="tina">
+									<div class="friend"><img src="../../static/images/prototype/people/tina.jpg" width="90px"></div>
+									<div class="friendTag">Tina D.</div>
+								</div></a>
+							</div>
+						</div>
+						<div class="nav-bar-toggle" id="dateBlock">
+							<div class="headingSmall">Tap a date to select:</div>
+							<center><h4>October 2012</h4></center>
+							<div class="calendar">
+								<div class="dateHolder"></div>
+								<a href="#" onclick="toggleDate('d1');"><div class="date" id="d1">1</div></a>
+								<a href="#" onclick="toggleDate('d2');"><div class="date" id="d2">2</div></a>
+								<a href="#" onclick="toggleDate('d3');"><div class="date" id="d3">3</div></a>
+								<a href="#" onclick="toggleDate('d4');"><div class="date" id="d4">4</div></a>
+								<a href="#" onclick="toggleDate('d5');"><div class="date" id="d5">5</div></a>
+								<a href="#" onclick="toggleDate('d6');"><div class="date" id="d6">6</div></a>
+								<a href="#" onclick="toggleDate('d7');"><div class="date" id="d7">7</div></a>
+								<a href="#" onclick="toggleDate('d8');"><div class="date" id="d8">8</div></a>
+								<a href="#" onclick="toggleDate('d9');"><div class="date" id="d9">9</div></a>
+								<a href="#" onclick="toggleDate('d10');"><div class="date" id="d10">10</div></a>
+								<a href="#" onclick="toggleDate('d11');"><div class="date" id="d11">11</div></a>
+								<a href="#" onclick="toggleDate('d12');"><div class="date" id="d12">12</div></a>
+								<a href="#" onclick="toggleDate('d13');"><div class="date" id="d13">13</div></a>
+								<a href="#" onclick="toggleDate('d14');"><div class="date" id="d14">14</div></a>
+								<a href="#" onclick="toggleDate('d15');"><div class="date" id="d15">15</div></a>
+								<a href="#" onclick="toggleDate('d16');"><div class="date" id="d16">16</div></a>
+								<a href="#" onclick="toggleDate('d17');"><div class="date" id="d17">17</div></a>
+								<a href="#" onclick="toggleDate('d18');"><div class="date" id="d18">18</div></a>
+								<a href="#" onclick="toggleDate('d19');"><div class="date" id="d19">19</div></a>
+								<a href="#" onclick="toggleDate('d20');"><div class="date" id="d20">20</div></a>
+								<a href="#" onclick="toggleDate('d21');"><div class="date" id="d21">21</div></a>
+								<a href="#" onclick="toggleDate('d22');"><div class="date" id="d22">22</div></a>
+								<a href="#" onclick="toggleDate('d23');"><div class="date" id="d23">23</div></a>
+								<a href="#" onclick="toggleDate('d24');"><div class="date" id="d24">24</div></a>
+								<a href="#" onclick="toggleDate('d25');"><div class="date" id="d25">25</div></a>
+								<a href="#" onclick="toggleDate('d26');"><div class="date" id="d26">26</div></a>
+								<a href="#" onclick="toggleDate('d27');"><div class="date" id="d27">27</div></a>
+								<a href="#" onclick="toggleDate('d28');"><div class="date" id="d28">28</div></a>
+								<a href="#" onclick="toggleDate('d29');"><div class="date" id="d29">29</div></a>
+								<a href="#" onclick="toggleDate('d30');"><div class="date" id="d30">30</div></a>
+								<a href="#" onclick="toggleDate('d31');"><div class="date" id="d31">31</div></a>
+								<div class="dateHolder"></div>
+								<div class="dateHolder"></div>
+								<div class="dateHolder"></div>
+							</div>
+						</div>
+						<div class="nav-bar-toggle" id="timeBlock">
+							<div class="headingSmall">Select a time:</div>
+							<input id="timeTextBox" type="text" value="">
+						</div>
+						<div class="nav-bar-toggle" id="locationBlock">
+							<div class="headingSmall">Enter the event location:</div>
+							<input id="locationTextBox" type="text" name="eventLocation">
+						</div>
+						<div class="nav-bar-toggle" id="summaryBlock">
+							<div class="alignLeftBlock">
+								<p>What: <span id="sName">Dessert Party!</span></p>
+								<p>When: <span id="sDate">October 1st, 2012</span> at <span id="sTime">2:30 pm</span></p>
+								<p>Where: <span id="sLocation">My house</span></p>
+								<p>Scheduled by: Me</p>
+								<p>Invited:</p>
+								<div class="friendsSelected">
+									<div class="friendsSelectedNormal">
+										<div class="friendBlock">
+											<div class="friend"><img src="../../static/images/prototype/people/allie.jpg" width="90px"></div>
+											<div class="friendTag">Allie S.</div>
+										</div>
+										<div class="friendBlock">
+											<div class="friend"><img src="../../static/images/prototype/people/joe.jpg" width="90px"></div>
+											<div class="friendTag">Joe F.</div>
+										</div>
+										<div class="friendBlock">
+											<div class="friend"><img src="../../static/images/prototype/people/deirdre.jpg" width="90px"></div>
+											<div class="friendTag">Deirdre O.</div>
+										</div>
+									</div>
+									
+								</div>
+								<div class="buttonBlock">
+									<a href="mainpage_strawberries.html"><div class="submitButton">Submit</div></a>
+									<a href="mainpage.html"><div class="cancelButton">Cancel</div></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+

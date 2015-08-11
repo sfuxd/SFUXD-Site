@@ -1,0 +1,41 @@
+.food{
+	font-size:26px;	
+	margin: 5px;
+}
+
+.dietaryNeedsTitle {
+    font-weight:bold;
+	margin: 0px 0px 0px 10px;
+}
+
+.foodPreferences{
+	display:inline-block;
+	float:left;
+	margin:5px;
+	width:350px;
+}
+
+
+.dietaryNeedsButton {
+    -moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    box-shadow:inset 1px 1px 0px 0px #ffffff;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+    background-color:#CCCCCC;
+    border:1px solid #000000;
+	border-radius:5px;
+    display:inline-block;
+	float:left;
+    color:#000000;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    padding:8px 8px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #FFFFFF;
+	text-align:center;
+	margin:35px 20px;
+}.dietaryNeedsButton:active {
+    position:relative;
+    top:1px;
+}

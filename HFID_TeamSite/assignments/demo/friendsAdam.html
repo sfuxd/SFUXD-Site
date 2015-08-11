@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../../static/css/demo.css">	
+		<script type="text/javascript">
+			<!--
+			console.log("test");
+			function modal() {
+				var box = document.getElementById('friendBox');
+				var button = document.getElementById('friendButton');
+				if(button.style.display != 'none'){
+					box.style.display = 'inline-block';
+					button.style.display = 'none';
+				} else {
+					box.style.display = 'none';
+					button.style.display = 'inline-block';
+				}
+			}
+			//-->
+		</script>
+		<style>
+			input[type="text"]{
+				display:inline-block;
+				background:#FFFFFF;
+				border: 2px solid #000000;
+				padding:3px;
+				color: #000000;
+				width: 140px;
+				text-align:left;
+				font-family:Trebuchet MS;
+				font-size:12px;
+				margin:10px 5px 10px 0px;
+			}	
+		</style>
+	</head>
+	
+	<body>
+		<div style="position:relative; margin:40px 0px 0px 40px">
+			<img class="ipad-img" src="../../static/images/prototype/ipadRev.png">
+			<div class="template-div">  <!--756 by 576-->
+				<div class="blueBody">
+				
+					<!-- PUT STUFF HERE -->
+					
+					<div>
+						<a href="mainpage.html"><div class="homeButton">Home</div></a>
+						<div class="smallHorzSpace"></div>
+						<div class = "pageTitle">Friends' Recipe Books</div>
+					</div>
+					
+					<div class="eventBox">
+						<div class="shelf">
+							<a href="recipebook_friends.html"><div class="book">
+								<div class="friendOutline"><img src="../../static/images/prototype/people/allie.jpg" width="60px"></div>
+								<div class="friendTag">Allie S.</div>
+							</div></a>
+							<a href="recipebook_friends.html"><div class="book">
+								<div class="friendOutline"><img src="../../static/images/prototype/people/bob.jpg" width="60px"></div>
+								<div class="friendTag">Bob R.</div>
+							</div></a>
+							<a href="recipebook_friends.html"><div class="book">
+								<div class="friendOutline"><img src="../../static/images/prototype/people/paul.jpg" width="60px"></div>
+								<div class="friendTag">Paul K.</div>
+							</div></a>
+							<a href="recipebook_friends.html"><div class="book">
+								<div class="friendOutline"><img src="../../static/images/prototype/people/sara.jpg" width="60px"></div>
+								<div class="friendTag">Sara Y.</div>
+							</div></a>
+						</div>
+						<div class="shelf">
+							<a href="recipebook_friends.html"><div class="book">
+								<div class="friendOutline"><img src="../../static/images/prototype/people/deirdre.jpg" width="60px"></div>
+								<div class="friendTag">Deirdre O.</div>
+							</div></a>
+							<a href="recipebook_friends.html"><div class="book">
+								<div class="friendOutline"><img src="../../static/images/prototype/people/joe.jpg" width="60px"></div>
+								<div class="friendTag">Joe F.</div>
+							</div></a>
+							<a href="recipebook_friends.html"><div class="book">
+								<div class="friendOutline"><img src="../../static/images/prototype/people/gina.jpg" width="60px"></div>
+								<div class="friendTag">Gina H.</div>
+							</div></a>
+							<a href="recipebook_friends.html"><div class="book">
+								<div class="friendOutline"><img src="../../static/images/prototype/people/lisa.jpg" width="60px"></div>
+								<div class="friendTag">Lisa S.</div>
+							</div></a>
+						</div>
+						<div class="shelf">
+							<a href="recipebook_friends.html"><div class="book">
+								<div class="friendOutline"><img src="../../static/images/prototype/people/tina.jpg" width="60px"></div>
+								<div class="friendTag">Tina D.</div>
+							</div></a>
+							<a href="recipebook_friends.html"><div class="book">
+								<div class="friendOutline"><img src="../../static/images/prototype/people/adam.jpg" width="60px"></div>
+								<div class="friendTag">Adam B.</div>
+							</div></a>
+							<a href="#" onclick="modal();"><div class="newFriendButton" id="friendButton">Add New Friend</div></a>
+							<div class="newFriendBox" id="friendBox">
+								Name
+								<input type="text" name="Name" size="16">
+								<a href="#" onclick="modal();"><div class="submitButton">Submit</div></a>
+								Email
+								<input type="text" name="email" size="16">
+								<a href="#" onclick="modal();"><div class="cancelButton">Cancel</div></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+

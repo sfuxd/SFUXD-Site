@@ -1,0 +1,537 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../../static/css/demo.css">
+		<script src="../../static/js/jquery.min.js" type="text/javascript"></script>
+		<script src="../../static/js/jqueryUI.js" type="text/javascript"></script>
+		<style>
+		
+		input[type="text"]{
+			display:inline-block;
+			float:center;
+			background: #FFFFFF;
+			border: 2px solid #000000;
+			opacity:0.6;
+			padding:7px;
+			color: #000000;
+			width: 430px;
+			text-align:left;
+			font-family:Trebuchet MS;
+			font-size:18px;
+		}	
+		#dishTextBox, #ingredientTextBox {
+			width: 200px;
+			font-size: 14px;
+			float:left;
+		}
+		</style>
+		
+		<script type="text/javascript">
+			Array.prototype.remove = function(from, to) {
+  				var rest = this.slice((to || from) + 1 || this.length);
+  				this.length = from < 0 ? this.length + from : from;
+				return this.push.apply(this, rest);
+			};
+
+		
+			background_images = new Array("url('../../static/images/prototype/food/raspberrycupcakes.jpg')", "url('../../static/images/prototype/food/rainbowCake2.jpg')", "url('../../static/images/prototype/food/strawberriesBg.png')", "url('../../static/images/prototype/food/sashimi.jpg')", "url('../../static/images/prototype/food/tuscanLemonChicken.jpg')", "url('../../static/images/prototype/food/blueberrypie2.jpg')", "url('../../static/images/prototype/food/KeyLimePie.jpg')");
+		
+			function funcToCall()
+			{
+				var randURL = background_images[Math.floor(Math.random() * background_images.length)];
+				document.getElementById("mainBody").style.background = randURL;
+			}
+		
+			function removeA(arr){
+			    var what, a= arguments, L= a.length, ax;
+			    while(L> 1 && arr.length){
+			        what= a[--L];
+			        while((ax= arr.indexOf(what))!= -1){
+			            arr.splice(ax, 1);
+			        }
+			    }
+			    return arr;
+			}
+			
+			
+			info = {
+				'friends':[],
+				'recipes':[],
+				'dishes':[],
+				'ingredients':[],
+				'name':'',
+				'date':'',
+				'time':'',
+				'location':''
+				};
+				
+			isOnFriendsPage = false;
+			hasChosenFriends = false;
+				
+			tabs = new Array('#nameTab', '#recipeTab', '#friendsTab', '#dateTab', '#timeTab', '#locationTab', '#summaryTab');
+			blocks = new Array('#nameBlock', '#recipeBlock', '#friendsBlock', '#dateBlock', '#timeBlock', '#locationBlock', '#summaryBlock');
+			
+			
+			function toggle_visibility(idt, idb) {
+				for(i=0;i<tabs.length;i++){
+					$(blocks[i]).css('display', 'none');
+					$(tabs[i]).css('margin', '0px -5px 0px 0px');
+					$(tabs[i]).css('width', '180px');
+					$(tabs[i]).css('height', '70px');
+					$(tabs[i]).css('background-color', 'rgba(100, 100, 100, 0.6)');
+					$(tabs[i]).css('border', '2px none');
+				}
+				$(idb).css('display', 'inline-block');
+				$(idt).css('margin', '0px -5px 0px 0px');
+				$(idt).css('width', '180px');
+				$(idt).css('height', '70px');
+				$(idt).css('background-color', 'rgba(255, 255, 255, 0)');
+				$(idt).css('border', '2px none solid none solid');
+				
+				if (idt === '#friendsTab') {
+					isOnFriendsPage = true;
+				}
+				
+				
+				if (idt === '#summaryTab') {
+					$('#sName').html($('#eName').html());
+					$('#sDish').html(info.dishes.join(", "));
+					$('#sIngredient').html(info.ingredients.join(", "));
+					$('#sFriends').html(info.friends.join(", "));
+					$('#sDate').html($('#eDate').html());
+					$('#sTime').html($('#eTime').html());
+					$('#sLocation').html($('#eLocation').html());
+				}
+			}
+			
+			function toggleFriend(f){
+				if($(f).css('border-top-style') === 'none'){
+					$(f).css('border', '2px solid #00CC00');
+					$(f).css('margin-top', '3px');
+					$(f).css('margin-right', '-2px');
+					$(f).css('margin-bottom', '3px');
+					$(f).css('margin-left', '-2px');
+					info.friends.push($(f + ' > .friendTag').html());
+				} else {
+					$(f).css('border', 'none');
+					$(f).css('margin-top', '5px');
+					$(f).css('margin-right', '0px');
+					$(f).css('margin-bottom', '5px');
+					$(f).css('margin-left', '0px');
+					removeA(info.friends, $(f + ' > .friendTag').html());
+				}
+				
+				hasChosenFriends = true;
+				<!-- $('#eFriends').html(info.friends.join(", ")); -->
+			}
+			
+			function toggleDate(d) {
+				date = "10-" + d.toString().slice(1) + "-12";
+				info.date = date;
+				$('.date').css('background', '#CCCCCC');
+				$('#'+d.toString()).css('background', 'green');
+				$('#eDate').html(date);
+			}
+			
+			function toggleTime(t) {
+				
+				
+			}
+
+			function displayDishes() {
+				var x1 = '<a class="select" onclick="removeDishes(' + "'dish_";
+				var x2 = "'" + ');"><div class="x xCreateEventMargin"><img src="../../static/images/styling/x.png" width="10px"></div></a>';
+				$('#eRecipes').html(info.recipes.join(", "));
+				$('#dishTextBox').val("");
+				$('#sDish_Recipe').html((function(){
+					var out = '';
+					for (i=0;i<info.dishes.length;i++) {
+						out = out + '<div class="dishListItem">' + x1 + info.dishes[i] + x2 + '<div class="ingredient" id="dish' + i.toString() + '"><span>' + info.dishes[i] + '</span></div>' + '</div>';
+					}
+					return out;
+				}));
+			}
+			
+			function removeDishes(dish) {
+				for (i=0; i<info.dishes.length; i++) {
+					if (dish === "dish_" + info.dishes[i]) {
+						info.dishes.remove(i,i);
+					}
+				}
+				displayDishes();
+			}
+
+			function displayIngredients() {
+				var x1 = '<a class="select" onclick="removeIngredients(' + "'ingr_";
+				var x2 = "'" + ');"><div class="x xCreateEventMargin"><img src="../../static/images/styling/x.png" width="10px"></div></a>';
+				$('#eRecipes').html(info.recipes.join(", "));
+				$('#ingredientTextBox').val("");
+				$('#sIngredient_Recipe').html((function(){
+					var out = '';
+					for (i=0;i<info.ingredients.length;i++) {
+						out = out + '<div class="ingrListItem">' + x1 + info.ingredients[i] + x2 + '<div class="ingredient" id="ingr' + i.toString() + '"><span>' + info.ingredients[i] + '</span></div>' + '</div>';
+					}
+					return out;
+				}));
+			}
+			
+			function removeIngredients(ingr) {
+				for (i=0; i<info.ingredients.length; i++) {
+					if (ingr === "ingr_" + info.ingredients[i]) {
+						info.ingredients.remove(i,i);
+					}
+				}
+				displayIngredients();
+			}
+			
+			
+			$(document).keypress(function(e) {
+				if (e.which == 13 && isOnFriendsPage == true && hasChosenFriends == true) {
+					console.log("friends");
+					toggle_visibility('#summaryTab', '#summaryBlock');
+					isOnFriendsPage = false;
+					hasChosenFriends = false;
+				}
+			});
+			
+			$(document).ready(function() {
+				$('#submitButtonClicked').click(function () {
+					console.log("clicked submit button");
+					var r= confirm("Ready to submit?");
+					if (r==true) {
+						alert("The event information has been submitted! (The event will not show up on the mainpage in this prototype.)");
+					}
+					return r;
+				});
+			
+				$('#timeTextBox').keypress(function(e) {
+					if (e.which == 13) {
+						console.log("time");
+						<!-- toggle_visibility('#locationTab', '#locationBlock'); -->
+						$('#eTime').html($('#timeTextBox').val());
+					}
+				});
+				$('#nameTextBox').keypress(function(e) {
+					if (e.which == 13) {
+						console.log("name");
+						toggle_visibility('#recipeTab', '#recipeBlock'); 
+						$('#eName').html($('#nameTextBox').val());
+					}
+				});
+				$('#dishTextBox').keypress(function(e) {
+					if (e.which == 13) {
+						console.log("dish");
+						toggle_visibility('#recipeTab', '#recipeBlock');
+						info.recipes.push($('#dishTextBox').val());
+						info.dishes.push($('#dishTextBox').val());
+						displayDishes();
+					}
+				});
+				$('#ingredientTextBox').keypress(function(e) {
+					var x1 = '<a class="select" onclick="removeDishes(ingr';
+					var x2 = ');"><div class="x xCreateEventMargin"><img src="../../static/images/styling/x.png" width="10px"></div></a>';
+					if (e.which == 13) {
+						toggle_visibility('#recipeTab', '#recipeBlock');
+						info.recipes.push($('#ingredientTextBox').val());
+						info.ingredients.push($('#ingredientTextBox').val());
+						displayIngredients();
+					}
+				});
+				$(".dishDrag").draggable({axis: "y"});
+				$(".dishDrag").on("mouseup", function() {
+					var top = $(".dishDrag").css("top");
+					var n = $(".dishListItem").length * -20 + 140;
+					
+					if (top.slice(0, top.length-2) > 0) {
+						$(".dishDrag").animate({top: 0}, 200);
+					} else if (top.slice(0, top.length-2) < n) {
+						if (n < 0) {
+							console.log(true);
+							$(".dishDrag").animate({top: n}, 200);
+						} else {
+							$(".dishDrag").animate({top: 0}, 200);
+						}
+					}
+					
+				});
+				$(".ingrDrag").draggable({axis: "y"});
+				$(".ingrDrag").on("mouseup", function() {
+					var top = $(".ingrDrag").css("top");
+					var n = $(".ingrListItem").length * -20 + 140;
+					
+					if (top.slice(0, top.length-2) > 0) {
+						$(".ingrDrag").animate({top: 0}, 200);
+					} else if (top.slice(0, top.length-2) < n) {
+						if (n < 0) {
+							console.log(true);
+							$(".ingrDrag").animate({top: n}, 200);
+						} else {
+							$(".ingrDrag").animate({top: 0}, 200);
+						}
+					}
+					
+				});
+				$('#locationTextBox').keypress(function(e) {
+					if (e.which == 13) {
+						console.log("location");
+						$('#eLocation').html($('#locationTextBox').val());
+						toggle_visibility('#friendsTab', '#friendsBlock');
+					}
+				});
+				$('#commentsTextBox').keypress(function(e) {
+					if (e.which == 13) {
+						console.log("comments");
+						$('#sComments').html($('#commentsTextBox').val());
+					}
+				});
+				
+				$('#commentsTextBox').focus(function() {
+					if ($(this).val() == "Your Comment Here") {
+						$(this).val("");
+					}
+				});
+				$('#commentsTextBox').blur(function() {
+					if ($(this).val() == "") {
+						$(this).val("Your Comment Here");
+					}
+				});
+			});
+			
+		</script>
+		
+	</head>
+	
+	<body onload="funcToCall()">
+		
+		<div style="position:relative; margin:40px 0px 0px 40px; width:948px; float:left">
+			<img class="ipad-img" src="../../static/images/prototype/ipadRev.png">
+			<div class="template-div">  <!--756 by 576-->
+				<div class="strawberryBody" id="mainBody">
+					<!-- PUT STUFF HERE -->
+					<div class="createEventHomeButtonDiv">
+						<a href="mainpage_v1.html"><div class="mainPageNameButton">Cook With Friends</div></a>
+					</div>	
+						
+					<div class = "createNewEventTitleButton">Create Event</div>
+					
+					
+					<div class="eventBox">
+						<div class="nav-bar">
+							<a class="select" >
+								<div onclick="toggle_visibility('#nameTab', '#nameBlock');" class="nav-bar-link-tall-2" id="nameTab">
+									<div>Event Name?</div>
+									<div id="eName"></div>
+								</div>
+							</a>
+							<a class="select" onclick="toggle_visibility('#recipeTab', '#recipeBlock');">
+								<div class="nav-bar-link-tall" id="recipeTab">
+									<div>What's Cooking?</div>
+									<div id="eName"></div>
+								</div>
+							</a>
+							<a class="select" onclick="toggle_visibility('#dateTab', '#dateBlock');">
+								<div class="nav-bar-link-tall" id="dateTab">
+									<div>When? Where?</div>
+									<div style="display:block;">
+										<div id="eDate"></div>
+										<div id="eTime"></div>
+									</div>
+									<div id="eLocation" style="display:block;"></div>
+								</div>
+							</a>
+							<a class="select" onclick="toggle_visibility('#friendsTab', '#friendsBlock');">
+								<div class="nav-bar-link-tall" id="friendsTab">
+									<div>Who's Coming?</div>
+									<div id="eFriends"></div>
+								</div>
+							</a>
+							<a class="select" onclick="toggle_visibility('#summaryTab', '#summaryBlock');">
+								<div class="nav-bar-link-tall" id="summaryTab">
+									<div>Summary</div>
+									<div id="eSummary"></div>
+								</div>
+							</a>
+						</div>
+						<div class="nav-bar-toggle-2" id="nameBlock">
+							<div class="headingSmall">Title your event.</div>
+							<div>Please press "Enter" to save.</div>
+							<input id="nameTextBox" type="text" name="eventTitle">
+							
+						</div>
+						<div class="nav-bar-toggle" id="recipeBlock">
+							
+							<div class="headingSmall" style="font-size:20px; width:400px;">What would you like to cook?</div>
+							<!-- <div>Please hit "Enter" to save.</div> -->
+							<div style="height:132px; width:200px; float:left;">
+								<input id="dishTextBox" type="text" name="eventDish">
+							</div>
+							<div style="font-size:16px; width:240px; float:left;">Cooking:</div>
+							<div style="height:132px; width:240px; float:left; overflow:hidden;">
+								<div class="dishDrag" style="width:240px; float:left;">
+									<div id="sDish_Recipe"></div>
+								</div>
+							</div>
+							<div class="headingSmall" style="font-size:20px;">What ingredients would you like others to bring?</div>
+							<!-- <div>Please specify quantity.</div> -->
+							<div style="height:132px; width:200px; float:left;">
+								<input id="ingredientTextBox" type="text" name="eventIngredient">
+							</div>
+							<div style="font-size:16px; width:240px; float:left;">Ingredients:</div>
+							<div style="height:132px; width:240px; float:left; overflow:hidden;">
+								<div class="ingrDrag" style="width:240px; float:left;">
+									<div id="sIngredient_Recipe"></div>
+								</div>
+							</div>
+							<!--<div class="recipeBox">
+								<div class="headingSmall">Recipes already selected:</div>
+							</div>
+							<a href="recipebook.html"><div class="uploadRecipeButton">Choose another recipe</div></a> -->
+						</div>
+						<div class="nav-bar-toggle" id="recipeBlock">
+							<div class="recipeBox">
+								<div class="headingSmall">Recipes already selected:</div>
+							</div>
+							<a href="recipebook.html"><div class="uploadRecipeButton">Choose another recipe</div></a>
+						</div>
+						<div class="nav-bar-toggle" id="friendsBlock">
+							<div class="headingSmall">Tap friends to invite them:</div>
+							<div class="friendsBox">
+								<a class="select" onclick="toggleFriend('#allie');"><div class="friendBlock" id="allie">
+									<div class="friend"><img src="../../static/images/prototype/people/allie.jpg" width="90px"></div>
+									<div class="friendTag">Allie S.</div>
+								</div></a>
+								<a class="select" onclick="toggleFriend('#bob');"><div class="friendBlock" id="bob">
+									<div class="friend"><img src="../../static/images/prototype/people/bob.jpg" width="90px"></div>
+									<div class="friendTag">Bob R.</div>
+								</div></a>
+								<a class="select" onclick="toggleFriend('#paul');"><div class="friendBlock" id="paul">
+									<div class="friend"><img src="../../static/images/prototype/people/paul.jpg" width="90px"></div>
+									<div class="friendTag">Paul K.</div>
+								</div></a>
+								<a class="select" onclick="toggleFriend('#sara');"><div class="friendBlock" id="sara">
+									<div class="friend"><img src="../../static/images/prototype/people/sara.jpg" width="90px"></div>
+									<div class="friendTag">Sara Y.</div>
+								</div></a>
+								<a class="select" onclick="toggleFriend('#deirdre');"><div class="friendBlock" id="deirdre">
+									<div class="friend"><img src="../../static/images/prototype/people/deirdre.jpg" width="90px"></div>
+									<div class="friendTag">Deirdre O.</div>
+								</div></a>
+								<a class="select" onclick="toggleFriend('#joe');"><div class="friendBlock" id="joe">
+									<div class="friend"><img src="../../static/images/prototype/people/joe.jpg" width="90px"></div>
+									<div class="friendTag">Joe F.</div>
+								</div></a>
+								<a class="select" onclick="toggleFriend('#gina');"><div class="friendBlock" id="gina">
+									<div class="friend"><img src="../../static/images/prototype/people/gina.jpg" width="90px"></div>
+									<div class="friendTag">Gina H.</div>
+								</div></a>
+								<a class="select" onclick="toggleFriend('#lisa');"><div class="friendBlock" id="lisa">
+									<div class="friend"><img src="../../static/images/prototype/people/lisa.jpg" width="90px"></div>
+									<div class="friendTag">Lisa S.</div>
+								</div></a>
+								<a class="select" onclick="toggleFriend('#tina');"><div class="friendBlock" id="tina">
+									<div class="friend"><img src="../../static/images/prototype/people/tina.jpg" width="90px"></div>
+									<div class="friendTag">Tina D.</div>
+								</div></a>
+							</div>
+						</div>
+						<div class="nav-bar-toggle" id="dateBlock">
+							<div class="headingSmall2">Tap a date to select:</div>
+							<center>December 2012</center>
+							<div class="calendar">
+								<div class="dateHolder"></div>
+								<a href="#" onclick="toggleDate('d1');"><div class="date" id="d1">1</div></a>
+								<a href="#" onclick="toggleDate('d2');"><div class="date" id="d2">2</div></a>
+								<a href="#" onclick="toggleDate('d3');"><div class="date" id="d3">3</div></a>
+								<a href="#" onclick="toggleDate('d4');"><div class="date" id="d4">4</div></a>
+								<a href="#" onclick="toggleDate('d5');"><div class="date" id="d5">5</div></a>
+								<a href="#" onclick="toggleDate('d6');"><div class="date" id="d6">6</div></a>
+								<a href="#" onclick="toggleDate('d7');"><div class="date" id="d7">7</div></a>
+								<a href="#" onclick="toggleDate('d8');"><div class="date" id="d8">8</div></a>
+								<a href="#" onclick="toggleDate('d9');"><div class="date" id="d9">9</div></a>
+								<a href="#" onclick="toggleDate('d10');"><div class="date" id="d10">10</div></a>
+								<a href="#" onclick="toggleDate('d11');"><div class="date" id="d11">11</div></a>
+								<a href="#" onclick="toggleDate('d12');"><div class="date" id="d12">12</div></a>
+								<a href="#" onclick="toggleDate('d13');"><div class="date" id="d13">13</div></a>
+								<a href="#" onclick="toggleDate('d14');"><div class="date" id="d14">14</div></a>
+								<a href="#" onclick="toggleDate('d15');"><div class="date" id="d15">15</div></a>
+								<a href="#" onclick="toggleDate('d16');"><div class="date" id="d16">16</div></a>
+								<a href="#" onclick="toggleDate('d17');"><div class="date" id="d17">17</div></a>
+								<a href="#" onclick="toggleDate('d18');"><div class="date" id="d18">18</div></a>
+								<a href="#" onclick="toggleDate('d19');"><div class="date" id="d19">19</div></a>
+								<a href="#" onclick="toggleDate('d20');"><div class="date" id="d20">20</div></a>
+								<a href="#" onclick="toggleDate('d21');"><div class="date" id="d21">21</div></a>
+								<a href="#" onclick="toggleDate('d22');"><div class="date" id="d22">22</div></a>
+								<a href="#" onclick="toggleDate('d23');"><div class="date" id="d23">23</div></a>
+								<a href="#" onclick="toggleDate('d24');"><div class="date" id="d24">24</div></a>
+								<a href="#" onclick="toggleDate('d25');"><div class="date" id="d25">25</div></a>
+								<a href="#" onclick="toggleDate('d26');"><div class="date" id="d26">26</div></a>
+								<a href="#" onclick="toggleDate('d27');"><div class="date" id="d27">27</div></a>
+								<a href="#" onclick="toggleDate('d28');"><div class="date" id="d28">28</div></a>
+								<a href="#" onclick="toggleDate('d29');"><div class="date" id="d29">29</div></a>
+								<a href="#" onclick="toggleDate('d30');"><div class="date" id="d30">30</div></a>
+								<a href="#" onclick="toggleDate('d31');"><div class="date" id="d31">31</div></a>
+								<div class="dateHolder"></div>
+								<div class="dateHolder"></div>
+								<div class="dateHolder"></div>
+							</div>
+							
+							
+							<div class="headingSmall2">Select a time:</div>
+							<input id="timeTextBox" type="text" value="">
+							
+							<div class="headingSmall2">Enter the event location:</div>
+							<input id="locationTextBox" type="text" name="eventLocation">
+						</div>
+						<div class="nav-bar-toggle" id="summaryBlock">
+							<div class="alignLeftBlock">
+								<div class="createEventSummaryMargins">What: <span id="sName">Dessert Party!</span></div>
+								<div class="createEventSummaryMargins">Cooking: <span id="sDish">Dishes</span></div>
+								<div class="createEventSummaryMargins">Ingredients: <span id="sIngredient">Ingredients</span></div>
+								<div class="createEventSummaryMargins">When: <span id="sDate">October 1st, 2012</span> at <span id="sTime">2:30 pm</span></div>
+								<div class="createEventSummaryMargins">Where: <span id="sLocation">My house</span></div>
+								<div class="createEventSummaryMargins">Invited: <span id="sFriends">My friends</span></div>
+								<!-- TODO: show correct friends, not defaults
+								<div class="friendsSelected">
+									<div class="friendsSelectedNormal">
+										<div class="friendBlock">
+											<div class="friend"><img src="../../static/images/prototype/people/allie.jpg" width="90px"></div>
+											<div class="friendTag">Allie S.</div>
+										</div>
+										<div class="friendBlock">
+											<div class="friend"><img src="../../static/images/prototype/people/joe.jpg" width="90px"></div>
+											<div class="friendTag">Joe F.</div>
+										</div>
+										<div class="friendBlock">
+											<div class="friend"><img src="../../static/images/prototype/people/deirdre.jpg" width="90px"></div>
+											<div class="friendTag">Deirdre O.</div>
+										</div>
+									</div> -->
+								<div class="createEventSummaryMargins">Comments: <span id="sComments"></div>
+								<input id="commentsTextBox" type="text" name="eventComments" value="Your Comment Here">
+								
+									
+								</div>
+								<div class="buttonBlock">
+									<a href="mainpage_v1.html"><div class="submitButton" id="submitButtonClicked">Submit</div></a>
+									<!-- <a href="mainpage_v1.html"><div class="cancelButton">Cancel</div></a> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="instructions">
+			<h3>Prototype Instructions</h3>
+			<p>This website simulates our app, which we designed for the iPad.</p>
+			<p>Press Enter on the keyboard to submit Information for all information text fields. On the real app, a keyboard would pop up, shifting the entire screen up.</p>
+			<p>Dragging is simple: just click, hold, and move the mouse.</p>
+			<p>The background of the app is not clickable. The images rotate each time you open a new page.</p>
+		</div>
+	</body>
+</html>
+
+
+

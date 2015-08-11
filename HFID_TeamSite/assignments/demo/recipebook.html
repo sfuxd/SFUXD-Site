@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../../static/css/demo.css">
+
+		</head>
+	
+	<body>
+		<script type="text/javascript">
+			<!--
+			console.log("test");
+			function toggle_visibility(idt, idb) {
+				var tabs = new Array('allTab', 'dessertTab', 'asianTab', 'italianTab', 'addTab');
+				var blocks = new Array('allBlock', 'dessertBlock', 'asianBlock', 'italianBlock', 'addBlock');
+				var b = document.getElementById(idb);
+				var t = document.getElementById(idt);
+				for(i=0;i<tabs.length;i++){
+					document.getElementById(blocks[i]).style.display = 'none';
+					tab = document.getElementById(tabs[i]);
+					tab.style.background = '#999999';
+				}
+				b.style.display = 'inline-block';
+				t.style.background = '#FFFFFF';
+			}
+			//-->
+		</script>
+
+			
+		<div style="position:relative; margin:40px 0px 0px 40px">
+			<img class="ipad-img" src="../../static/images/prototype/ipadRev.png">
+			<div class="template-div">
+				<div class="blueBody">
+					<!-- top div-->
+					<div class = "top-row">
+						<div class="verticalSmall">
+							<a href="mainpage.html"><div class="homeButton">Home</div></a>
+						</div>
+
+						<div class = "vertical-buttons">
+							<a href="dietaryNeedsFromRecipebook.html"><div class = "genericButton">Dietary Needs</div></a>
+							<a href="uploadRecipeFromRecipebook.html"><div class = "genericButton">Upload New Recipe</div></a>
+						</div>
+					
+						<div class = "pageTitle">Recipe Book</div>
+						
+						<!-- filter box-->
+						<div class = "filterBox">
+							<div class = "smallHeading">Filter</div>
+							<div class = "filterRow">
+								Favorites
+								<input type = "checkbox" id = "checkbox" onclick="checkBox()">
+							</div>
+							<div class = "filterRow">
+								<div class = "inputBox">Must Have: </div><div class = "inputBox"><input type="text" name="Must Have" size="10" onkeypress="mustHaveFunction(event)"></div>
+							</div>
+							<div class = "filterRow">
+								<div class = "inputBox">Can't Have: </div><div class = "inputBox"><input type="text" name = "Can't Have" size="10" onkeypress="mustHaveFunction(event)"></div>
+							</div>
+						</div>
+
+					</div>
+					
+					<!-- tabs div-->
+					<div class = "tabs">
+						<a href="#" onclick="toggle_visibility('allTab', 'allBlock');"><div class = "recipeTab" id="allTab">All</div></a>
+						<a href="#" onclick="toggle_visibility('dessertTab', 'dessertBlock');"><div class = "recipeTab2" id="dessertTab">Dessert</div></a>
+						<a href="#" onclick="toggle_visibility('asianTab', 'asianBlock');"><div class = "recipeTab" id="asianTab">Asian Fusion</div></a>
+						<a href="#" onclick="toggle_visibility('italianTab', 'italianBlock');"><div class = "recipeTab" id="italianTab">Italian</div></a>
+						<a href="#" onclick="toggle_visibility('addTab', 'addBlock');"><div class = "recipeTab" id="addTab">+</div></a>
+					</div>
+					
+					<!-- recipebook div-->
+					<div class = "recipeBook" id="dessertBlock">
+					
+						<!-- recipe column one-->
+						<div class = "recipeColumnLeft"> 
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Gingerbread Cookies 
+									<img src="../../revisedMockups/assets/gingerbread.jpg" width="150px"> 
+								</div>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>
+							</div>
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+								Cinnamon Rolls
+								<img src="../../revisedMockups/assets/cinnamon Rolls.jpg" width="150px">
+								</div>
+							<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>
+							</div>
+						</div>
+						
+						<!-- recipe column two-->
+						<div class = "recipeColumn">
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Almond Lace Cookies
+									<img src="../../revisedMockups/assets/orangeAlmondLaceCookies.jpg" width="150px">
+								</div>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>
+							</div>
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Raspberry Cupcakes
+									<img src="../../revisedMockups/assets/raspberry cupcakes.jpg" width="150px">
+								</div>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>
+							</div>
+						</div>
+						
+						<!-- recipe column three-->
+						<div class = "recipeColumn">
+
+							<div class="greaterRecipeCard">
+								<a href="recipeStrawberriesFromRecipebook.html"><div class = "recipeCard">
+									Chocolate Swirl Strawberries
+									<img src="../../revisedMockups/assets/strawberries.jpg" width="150px">
+								</div></a>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>				
+							</div></a>
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Halloween Cookies
+									<img src="../../revisedMockups/assets/halloween cookies.jpg" width="150px">
+								</div>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>
+							</div>
+						</div>
+						
+						<!-- recipe column four-->
+						<div class = "recipeColumn">
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Rainbow Cake
+									<img src="../../revisedMockups/assets/rainbow cake.jpg" width="150px">
+								</div>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>
+							</div>
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Apple Pie
+									<img src="../../revisedMockups/assets/apple pie.jpg" width="150px">
+								</div>  
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>
+							</div>
+						</div>
+						
+						<!-- recipe column five-->
+						<div class = "recipeColumnRight">
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Cheesecake
+									<img src="../../revisedMockups/assets/cheesecake.jpg" width="150px">
+								</div>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>
+							</div>
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Tiramisu
+									<img src="../../revisedMockups/assets/tiramisu.jpg" width="150px">
+								</div>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>
+							</div>
+						</div>	
+					</div>
+					<div class = "recipeBook" id="allBlock">
+					
+						<!-- recipe column one-->
+						<div class = "recipeColumnLeft"> 
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Gingerbread Cookies 
+									<img src="../../revisedMockups/assets/gingerbread.jpg" width="150px"> 
+								</div>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>
+							</div>
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+								Cinnamon Rolls
+								<img src="../../revisedMockups/assets/cinnamon Rolls.jpg" width="150px">
+								</div>
+							<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>
+							</div>
+						</div>
+						
+						<!-- recipe column two-->
+						<div class = "recipeColumn">
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Sundried Tomato Pizza
+									<img src="../../revisedMockups/assets/sundriedTomatoPizza.jpg" width="150px">
+								</div>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>				
+							</div>
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Raspberry Cupcakes
+									<img src="../../revisedMockups/assets/raspberry cupcakes.jpg" width="150px">
+								</div>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>
+							</div>
+						</div>
+						
+						<!-- recipe column three-->
+						<div class = "recipeColumn">
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Tempura Udon
+									<img src="../../revisedMockups/assets/tenpura udon.jpg" width="150px">
+								</div>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>
+							</div>
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Halloween Cookies
+									<img src="../../revisedMockups/assets/halloween cookies.jpg" width="150px">
+								</div>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>
+							</div>
+						</div>
+						
+						<!-- recipe column four-->
+						<div class = "recipeColumn">
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Rainbow Cake
+									<img src="../../revisedMockups/assets/rainbow cake.jpg" width="150px">
+								</div>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>
+							</div>
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Pesto Pasta
+									<img src="../../revisedMockups/assets/pesto pasta.jpg" width="150px">
+								</div>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>
+							</div>
+						</div>
+						
+						<!-- recipe column five-->
+						<div class = "recipeColumnRight">
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Cheesecake
+									<img src="../../revisedMockups/assets/cheesecake.jpg" width="150px">
+								</div>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>
+							</div>
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Yakitori
+									<img src="../../revisedMockups/assets/yakitori.jpeg" width="150px">
+								</div>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>				
+							</div>
+						</div>	
+					</div>	
+					<div class = "recipeBook" id="asianBlock">					
+						<!-- recipe column one-->
+						<div class = "recipeColumnLeft">
+							
+						</div>
+						
+						<!-- recipe column two-->
+						<div class = "recipeColumn">
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Sashimi
+									<img src="../../revisedMockups/assets/sashimi.jpg" width="150px">
+								</div>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>
+							</div>
+						</div>
+						
+						<!-- recipe column three-->
+						<div class = "recipeColumn">
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Yakitori
+									<img src="../../revisedMockups/assets/yakitori.jpeg" width="150px">
+								</div>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>				
+							</div>
+						</div>
+						
+						<!-- recipe column four-->
+						<div class = "recipeColumn">
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Tempura Udon
+									<img src="../../revisedMockups/assets/tenpura udon.jpg" width="150px">
+								</div>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>
+							</div>
+						</div>
+					</div>
+					<div class = "recipeBook" id="italianBlock">					
+						<!-- recipe column one-->
+						<div class = "recipeColumnLeft">
+							
+						</div>
+						
+						<!-- recipe column two-->
+						<div class = "recipeColumn">
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Tuscan Lemon Chicken
+									<img src="../../revisedMockups/assets/tuscan lemon chicken.JPG" width="150px">
+								</div>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>
+							</div>
+						</div>
+						
+						<!-- recipe column three-->
+						<div class = "recipeColumn">
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Sundried Tomato Pizza
+									<img src="../../revisedMockups/assets/sundriedTomatoPizza.jpg" width="150px">
+								</div>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>				
+							</div>
+						</div>
+						
+						<!-- recipe column four-->
+						<div class = "recipeColumn">
+							<div class="greaterRecipeCard">
+								<div class = "recipeCard">
+									Pesto Pasta
+									<img src="../../revisedMockups/assets/pesto pasta.jpg" width="150px">
+								</div>
+								<div class = "makeButton" onclick="makeButtonFunction()"><a href="create_event.html">Make</a></div>
+							</div>
+						</div>
+					</div>
+					<div class = "recipeBook" id="addBlock">					
+						<div class="smallHeading">Add new tab.</a>
+					</div>
+				</div>
+				
+			</div>
+	
+			<script src="recipeBookScript.js"></script>
+				
+		</div>
+	
+	</body>
+
+
+</html>
+
+
+

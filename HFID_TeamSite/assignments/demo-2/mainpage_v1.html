@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../../static/css/demo.css">
+		<style>
+		
+		.with {
+			font-size:12px;
+		}
+		</style>
+		
+		
+		<script type="text/javascript">
+		
+			background_images = new Array("url('../../static/images/prototype/food/raspberrycupcakes.jpg')", "url('../../static/images/prototype/food/rainbowCake2.jpg')", "url('../../revisedMockups/assets/strawberriesBg.png')", "url('../../static/images/prototype/food/sashimi.jpg')", "url('../../static/images/prototype/food/tuscanLemonChicken.jpg')");
+		
+			function funcToCall()
+			{
+				var randURL = background_images[Math.floor(Math.random() * background_images.length)];
+				document.getElementById("mainBody").style.background = randURL;
+			}
+		
+		</script>
+		
+		
+	</head>
+	
+	<body onload="funcToCall()">
+		<div style="position:relative; margin:40px 0px 0px 40px">
+			<img class="ipad-img" src="../../static/images/prototype/ipadRev.png">
+			<div class="template-div">
+				<div class="strawberryBody" id="mainBody">
+					
+					<div class="mainLeft">
+						<a href="mainpage_v1.html"><div class="mainPageNameButton">Cook With Friends</div></a>
+						<a href="create_event_v1.html"><div class="mainPageButton">Create Event</div></a>
+						<!-- <a href="recipeStrawberriesFromHome.html"><div class="mainPageButtonSmall">Chocolate Swirl Strawberries from </div></a> -->
+					</div>
+					<div class="mainRight">
+						<div class = "mainPageTimeline">
+							<h2>Upcoming Events</h2>
+							<div class="subTimeline">
+								<a href="Pancakes_Paul_event_v1.html">
+									<div class="timelineItemButton">
+										<div class="timelineItemTop"><span class="with">You are </span>going<span class="with"> to: </span></div>
+										<div class="timelineItem">Pancakes <span class="with">organized by</span> Paul</div>
+										<div class="timelineItem">Oct. 14th, Sun 10:00 AM.</div>
+									</div>
+								</a>
+								<a href="Steak_Gina_event_v1.html">
+									<div class="timelineItemButton">
+										<div class="timelineItemTop"><span class="with">You are </span>hosting<span class="with">: </span></div>
+										<div class="timelineItem">Steak <span class="with">organized by</span> yourself</div>
+										<div class="timelineItem">Oct. 23rd, Tue 7:30 PM.</div>
+									</div>
+								</a>
+								<a href="Cookies_Allie_event_v1.html">
+									<div class="timelineItemButton">
+										<div class="timelineItemTop"><span class="with">You are </span>invited<span class="with"> to: </span></div>
+										<div class="timelineItem">Cookies <span class="with">organized by</span> Allie</div>
+										<div class="timelineItem">Oct. 28th, Sun 11:00 AM.</div>
+									</div>
+								</a>
+								<a href="Cinnamon_Bob_event_v1.html">
+									<div class="timelineItemButton">
+										<div class="timelineItemTop"><span class="with">You are </span>invited<span class="with"> to: </span></div>
+										<div class="timelineItem">Cinnamon Rolls <span class="with">organized by</span> Bob</div>
+										<div class="timelineItem">Oct. 31st, Wed 11:00 AM.</div>	
+									</div>
+								</a>
+							</div>
+						</div>
+						<a href="friends.html"><div class="friendsButton">Friends</div></a>
+						<!-- <a href="recipebook.html"><div class="mainPageButton">My Recipe Book</div></a>
+						<div class="mainPageButton" id="test"><a href="friends.html">Friends' Recipe Books</a></div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</body>
+
+
+</html>
+
+
+

@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<HTML>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+		
+		<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+		<script src="../static/js/main.js"></script>
+	</head>
+	
+	<body>
+		<div class="header">
+			<div class="centered">
+				<div style = "display:inline-block">
+					<div id="team-name">Fallera - Social Cooking</div>			
+					<div id="class-name">Human Factors Interface Design, Fall 2012</div>
+				</div>
+				<div style = "float:right">	
+					<img src="../static/images/styling/cinnamonRollEditsNoBG.png" width="275px">
+				</div>
+			</div>
+		</div>
+		<div class="body centered">
+			<div class="disp-window">
+				<div class="nav-bar">
+					<div class="nav-bar-link"><a href="../index.html">Home</a></div>
+					<div class="nav-bar-link active"><a href="assignments.html">Assignments</a></div>
+					<div class="nav-bar-link"><a href="demo 2/mainpage_v1.html">Prototype</a></div>
+					<div class="nav-bar-link"><a href="about_us.html">About Us</a></div>
+				</div>
+				<div class="article">
+					<a id="design-refinement"><h1>Design Refinement</h1></a>
+					<a id="revised-mockup"><h2>Revised Interface Design</h2></a>
+					The final mockup reflects significant revisions from the Design Development phase.  These revisions are a synthesis of the results from the usability tests as well as from our experience and the cognitive walkthrough.  Use the links below to navigate to the interface design screenshots with more detailed information.  The "Main Page" is the first page users visit when they open the app.  "Create New Event" is the result of the "Create Event" button on the main page that allows a user to create a new social cooking event.  The "View / Edit Event" page pops up after the user taps an event in the timeline; it allows the user to see the details of an event he or she created and edit the event information.  The "Recipe Book" page allows the user to see the recipes he or she has uploaded to the app.  The "Friends' Recipe Books" page shows the user the friends he or she has on the app and allows the user to see each of their recipe books.
+					<h4>Revised Interface Design Screenshots</h4>
+					<h4> <a href = "main_page.html">Main Page</a> </h4>
+					<h4> <a href = "new_event.html"> Create New Event</a> </h4>
+					<h4> <a href = "view_event.html">View / Edit Event</a> </h4>
+					<h4> <a href = "recipe_book.html">Recipe Book</a> </h4>
+					<h4> <a href = "friends.html">Friends' Recipe Books</a> </h4>
+					<h2>Representative Scenarios</h2>
+					Although the majority of the scenarios we tested our paper prototype on have not changed since the design development phase, we have transformed the “Timeline” scenario into an “Edit Event” scenario. This scenario incorporates the new social features we added, including allowing the people attending a social cooking event to coordinate who will bring what ingredients and to comment on the recipe and/or the event itself. The scenarios below depict the major tasks that the users of our app can accomplish.
+					<h3> Create an Event Scenario </h3>
+					You want to schedule a cooking event with some friends for next weekend, so you go to your social cooking app. You navigate to the page for creating the event. Then you title the event “Dessert Party!” You decide to make chocolate swirl strawberries with your friends Allie, Dierdre, and Joe on Monday, October 1 at 2:30pm. The location is your house. 
+					<h3> Find a Recipe Scenario </h3>
+					You feel like making dessert, so you look at some of the dessert recipes in your recipe book. You find the dessert recipe that requires the least amount of time. Then you return to the home page.
+					<h3> My Friends Scenario </h3>
+					Yesterday you met a new colleague at work, and over lunch you discovered a common interest in good food. You decide to add him to your social cooking app, so you navigate to the “Friends’ Recipebooks” page and add your new friend. His name is Adam Brown, and his email address is adam.brown@gmail.com. 
+					<h3> Edit Event Scenario </h3>
+					You receive a new event notification on your home page, so you click on the event to see who invited you and what the event is. You then accept the invitation. You check boxes to let your friends know you can bring the strawberries and skewers. You also comment that you will be running a little late because you need to walk the dog. 
+					<a id="major-changes"><h2>Major Changes to the Prototype</h2></a>
+					<h3>Timeline</h3>
+					In our initial prototype, we started off with a very different approach to the timeline. We thought about it as a way to keep users excited about upcoming events and to remember past ones.  The timeline at first was a horizontal line, with dots representing different dates. We played with the idea of pictures, moving along the timeline and small descriptions.  However, in our user interviews, we learned that the purpose of the timeline was not clear. Furthermore, because text flows horizontally, we had difficulty fitting descriptive text into that format, and there was too little space for pictures. We have replaced the previous timeline with a box listing all upcoming events by date. The descriptions of events include the recipes, the friends you are cooking with, the time, and the location. The idea behind the timeline is that the user can easily open up the app and glance at the timeline to stay organized. Clicking each event opens up the event page where the user can see more  details. 
+					<h3>Edit Eveng Page</h3>
+					We introduced a new page to our application. This page enables editing an already-created event. This page opens up after a user clicks on an event in their upcoming events box. All event participants can access this page to leave comments, check event details such as location, and select ingredients to bring. This page makes the app more social because now our users can communicate with each other through the app. The comment box helps users navigate their busy schedules and logistical challenges by providing a place for users to see an entire conversation and work out times that work best. This is superior to email, because the screen for seeing people’s availability is one click away from the screen where the organizer can change the time of the event. Organizing cooking with friends has a lot of logistical challenges, so we consider this a crucial aspect of the app.
+					<h3>Friends’ Recipe Books</h3>
+					In order to make the recipe sharing as easy and fun as possible, we have changed the recipe book page of friends. Before, a user would have to look up their friend in their friend list, go to the friend’s profile page, then click on the link to the friend’s recipe book to find recipes. That is a lot of clicks on a tablet. Instead, we have now replaced the initial friends’ page with the friends’ recipe books page, designed to look like a bookshelf with all your friend’s recipe books directly accessible. From the home page, it only takes two clicks to browse your friends recipes. 
+					<h3>Saving Friends’ Recipes</h3>
+					For our initial prototype, we thought it would make the app more social if all the users’ friends’ recipes were located directly in the user’s own recipe book. However, after discussion, we realized that this was too cluttered and difficult to use (imagine having 50 friends, all with up to 50 recipes each!). So instead, we introduced a “save it!” button to each friend’s recipe, which automatically adds that recipe to your own cookbook when clicked.
+					<a id="features-left-out"><h2>Features We Left Out</h2></a>
+					<h3>Aesthetics</h3>
+					Currently, the app looks very sterile and more corporate than fun. Because this is a cooking app, we want to add a more homey feel to the overall design, to make users more excited about cooking. We have started doing this with concept art for the friends’ recipe books page, and we ultimately aim to make this look a little more elegant. We also hope to make the app feel more consistent as a whole.
+					<h3>Recipe Filter</h3>
+					The filter currently does not work, since this requires advanced Javascript and is not necessary for now. 
+					<h3>Rotating home page background image</h3>
+					We want the homepage to continuously show random recipes from friends’ recipe books as the background image. We plan to incorporate this into the prototype for the next phase, since it should be relatively easy to implement. However, since it did not have a high priority, we have not implemented it yet. 
+					<h3>Identifying the person bringing each ingredient</h3>
+					Currently the ingredient selection feature does not show which friend has selected which ingredient. We plan to implement this in the next phase because this is relatively important, but we just did not have time to implement it in this phase. 
+					<h3>Favorites</h3>
+					The star outline on each recipe that users can click on to “favorite” a recipe is not yet functional, since this is a nice feature to have that is not necessary. 
+					<h3>Timer</h3>
+					We want the app to be useful during the cooking process as well. We could build in a timer, for example, that would mark how long your cake has been in the oven. However, this is also not necessary now, and would require lots of extra work to implement.
+					<h2>Using the Prototype</h2>
+					<p>You can access our prototype <a href = "http://hfid.olin.edu/sa2013/s_engr3220-fallera/assignments/demo/mainpage.html">here</a>!</p>
+					<p>When using the prototype, you can click on any of the home page buttons in order to view already created events, create a new event, view the recipe for the background image of chocolate swirl strawberries, and view friends’ recipebooks. From the Create Event page, you can enter all the text information for creating an event and click on friends’ images to invite them. From each friend’s recipebook page, you can view their dietary needs. You can also add a new friend to the friends’ recipe books page. </p>
+					<p>However, many of the features are not quite functional yet and use “Wizard of Oz” techniques for now. For example, when creating an event, you cannot actually upload a recipe, and clicking on the button navigates away from the event creation page without saving your previously entered information. In addition, the newly created event that subsequently appears on the home page contains default information and does not actually correspond to the information you entered when creating the event. After navigating away from the home page, the newly created event no longer appears on the upcoming events timeline when you return to the home page.</p>
+					<p>The recipe book pages are also not working quite yet; it is currently impossible to upload new recipes or select a recipe image to view the full recipe. You also cannot click on the other recipe tabs from a friend’s recipe book. The filter box is not yet implemented, and you cannot create a new tab.</p>
+					<p>Since we made this prototype on the computer, and not on a tablet, many of the elements in the app are currently not functioning as they should. For example, users should be able to scroll through the recipe pages with a swiping gesture. In addition, when creating an event, the user will be able to enter a time using a more intuitive dial interface, instead of typing out the time.</p>
+					<h2>Tools Used</h2>
+					Our initial mock-up was created in Balsamiq. We then used a combination of HTML, CSS, and Javascript to implement our prototype. The problem with this approach was that only one team member was comfortable using HTML, CSS, and Javascript. Although all team members did learn a lot in the process, the learning curve was quite steep, especially for the Javascript. We also used Github for version control, which made the collaborative coding process much easier. The most difficult aspect of this was due to accidentally writing over another team member’s changes if one team member forgot to “pull” from the git repository before “pushing” their changes to the repository.</p>
+					
+					<a id="cognitive-walkthrough"><h2>Cognitive Walkthrough</h2>
+					<p> The cognitive walkthrough is used to evaluate an interface by walking through all the steps of a task and checking for potential usability problems. An evaluator reads through the script to learn about the prototype in general, what task they are trying to accomplish, which specific actions are required to complete the task, and who the users are and what knowledge they are assumed to have. For each action, the evaluator records notes on whether the user is trying to produce the effect the action has, whether users will notice that the correct action is available, whether users will know the action is the correct one for the effect they are trying to produce, and whether the users will understand the feedback they get. </p>
+					<h3>Cognitive Walkthrough Script</h3>
+					<h4> Prototype Description </h4>
+					<p> This is a prototype of a tablet application for social cooking. The home page displays a list of upcoming events, including notifications of new events, and you can click on an event to go to the event page. The event page contains information on which friends have accepted/declined the invitation, who will bring which ingredients, date/time/location, and friends’ comments. Clicking on the create an event button on the home page brings you to a page with several pages for choosing a recipe, inviting friends, and setting a date/time/location. The home page recipe book button brings you to a page with tabs for each food category and corresponding recipes with pictures. From the home page, you can also click on the button for friends’ recipe books, which allows you to click on a friend’s icon to see their recipe book, or add a new friend.</p>
+					<h4> Task Description </h4>
+					<p> The task to be performed is creating a new social cooking event. This involves a preliminary step of viewing friends’ recipes and adding the ones you like to your recipe book. You want to schedule a cooking event with some friends for next weekend. In addition, you follow up after creating the event by viewing the event page to see friends’ comments and who has accepted or declined.</p>
+					<h4>List of Specific Actions to Complete the Task</h4>
+					<ol>
+					<li> Navigate to the friends’ cookbook page. </li>
+					<li> Browse Allie’s dessert recipes. </li>
+					<li> Add her cinnamon roll recipe to your cookbook. </li>
+					<li> Go back to the home page. </li>
+					<li> Click on the button for creating a new event. </li>
+					<li> Title the event “Dessert party!” </li>
+					<li> Choose the recipe for chocolate swirl strawberries. </li>
+					<li> Invite friends Allie, Joe, and Dierdre. </li>
+					<li> Set the time and date for 2:30pm on Saturday, October 20. </li>
+					<li> Set the location as your house. </li>
+					<li> Return to the home page. </li>
+					<li> Click on the link to the event page for the event you just created. </li>
+					<li> Check which friends have accepted/declined. </li>
+					<li> Check whether there are any new comments. </li>
+					</ol>
+					<h4> User Description </h4>
+					<p> The users cook on a regular basis, enjoy occasionally cooking with friends, and are familiar with cooking websites/blogs. They may already have an iPhone or tablet, but even if they do not, they are still familiar with the concept of iPhone and tablet apps. In general, they are either current college students or recent college graduates who are now working. They have busy lives, so they like to maximize their efficiency and organization.</p>
+					<h4> Questions on Each Action </h4>
+					<ul>
+					<li> Will the users be trying to produce whatever effect the action has? </li>
+					<li> Will users be able to notice that the correct action is available? </li>
+					<li> Will users know the action is the right one for the effect they want to produce? </li>
+					<li> Will users understand the feedback they get after the action is taken? </li>
+					</ul>
+					<h3> Summary of Cognitive Walkthrough Feedback </h3>
+					<p> Overall, the student performing the cognitive walkthrough thought that the interface was intuitive and answered "yes" to most of the questions on each action.  Some of the specific constructive criticism offered by the student performing the walkthrough is as follows: </p>
+					<ul>
+					<li> The stars we used to denote "favorite" recipes were ambiguous, particularly when they appeared in friends' cookbooks--the stars looked like bookmarks or a way to save a friend's recipe.  In response, we removed unfilled stars in friends' recipe books. </li>
+					<li> Adding a recipe to an event might not always be helpful, especially if the user does not yet know that choosing one or more recipes for an event will allow their friends to see the ingredients needed and help bring ingredients.  However, users familiar with the app will know that attaching a recipe to an event is useful. </li>
+					<li> The shading scheme for days that already have events on them (on the "create new event" page) makes it seem as if the user cannot choose those days; the names of the events happening on those days (which were already on the calendar) should be sufficient. </li>
+					<li> The location option seems strange as just a textbox, but linking to a map would be slower because of the need for high granularity.  Providing an autocomplete search bar or a button with most-often-used location would help make this step clearer. </li>
+					<li> It is not evident whether or not the user can click on a single event in the timeline, since the timeline looks like all of the other buttons.  As the user can, maybe separating the events into individual buttons or otherwise separating them more might make this more clear. </li>
+					</ul>
+					
+					<h3><a href = "https://docs.google.com/file/d/0B8UKwcBSXcvPOEp5UmliUGJaOU0/edit">Presentation</a> </h3>
+					<h3><a href = "https://docs.google.com/file/d/0B8UKwcBSXcvPUzF5YkpybVJ6OVk/edit">Heuristic Evaluation</a> </h3>
+					
+					<a id="work-breakdown"><h2>Work Breakdown</h2></a>
+					<table>
+						<thead>
+							<th>
+								<td>Joe Gibson</td>
+								<td>Molly Grossman</td>
+								<td>Mandy Korpusik</td>
+								<td>Colby Sato</td>
+								<td>Katja Bego</td>
+							</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Cognitive walkthrough and heuristic evaluation scripts</td>
+								<td>10</td>
+								<td>10</td>
+								<td>60</td>
+								<td>10</td>
+								<td>10</td>
+							</tr>
+							<tr>
+								<td>Prototype</td>
+								<td>30</td>
+								<td>40</td>
+								<td>20</td>
+								<td>8</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>Deliverable and Website</td>
+								<td>5</td>
+								<td>25</td>
+								<td>30</td>
+								<td>20</td>
+								<td>20</td>
+							</tr>
+							<tr>
+								<td>Presentation</td>
+								<td>5</td>
+								<td>10</td>
+								<td>5</td>
+								<td>40</td>
+								<td>40</td>
+							</tr>
+							<tr>
+								<td>UI Redesign</td>
+								<td>20</td>
+								<td>20</td>
+								<td>20</td>
+								<td>20</td>
+								<td>20</td>
+							</tr>
+							
+						</tbody>
+					</table>	
+				</div>
+			</div>
+			<div class="side-bar">
+				<div class="side-bar-link"><a href="project_proposal.html">Project Proposal</a></div>
+				<div class="side-bar-link"><a href="needs_analysis.html">Needs Analysis</a></div>
+				<div class="side-bar-link"><a href="design_development.html">Design Development</a></div>
+				<div class="side-bar-link"><a href="#design_refinement">Design Refinement</a></div>
+				<div class="side-bar-link sub-link"><a href="#revised-mockup">Revised Mockup</a></div>
+				<div class="side-bar-link sub-sub-link"><a href="main_page.html">Main Page</a></div>
+				<div class="side-bar-link sub-sub-link"><a href="new_event.html">Create New Event</a></div>
+				<div class="side-bar-link sub-sub-link"><a href="view_event.html">View / Edit Event </a></div>
+				<div class="side-bar-link sub-sub-link"><a href="recipe_book.html">My Recipe Book</a></div>
+				<div class="side-bar-link sub-sub-link"><a href="friends.html">Friends' Recipe Books</a></div>	
+				<div class="side-bar-link sub-link"><a href="#major-changes">Major Changes</a></div>
+				<div class="side-bar-link sub-link"><a href="#features-left-out">Features Left Out</a></div>
+				<div class="side-bar-link sub-link"><a href="#cognitive-walkthrough">Cognitive Walkthrough</a></div>
+				<div class="side-bar-link sub-link"><a href="#work-breakdown">Work Breakdown</a></div>
+				<div class="side-bar-link"><a href="final_design_refinement.html">Final Refinement</a></div>
+				<div class="side-bar-link"><a href="demo 2/mainpage_v1.html">Final Prototype</a></div>
+			</div>
+		</div>
+	</body>
+</HTML>

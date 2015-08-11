@@ -1,0 +1,401 @@
+.top-row{
+	width:765px;
+	height:115px;
+	display:inline-block;
+}
+
+.tabs{
+	display:inline-block;
+	margin:0px;
+	padding:0px;
+	width:756px;
+	height:42px;
+}
+
+.recipeBook{
+	width:956px;
+	height:420px;
+	border:solid 2px;
+	position:relative;
+	left:-65px;
+}
+
+.vertical-buttons{
+	margin:10px 10px;
+	display:inline-block;
+	float:left;
+}
+
+.template-div {
+
+	overflow:hidden;
+}
+
+.pull-right {
+	float:right;
+}
+
+.pull-left {
+	float:left;
+}
+
+/* Normal button on the main page */
+.mainPageButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#FFFFFF;
+	opacity:0.5;
+	-moz-border-radius:16px;
+	-webkit-border-radius:16px;
+	border-radius:16px;
+	border:1px solid #dcdcdc;
+	display:table-cell;
+	color:#000000;
+	font-family:Trebuchet MS;
+	font-size:24px;
+	font-weight:bold;
+	width: 200px;
+	height: 120px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #777777;
+text-align:center;
+vertical-align:middle;
+}
+
+}.mainPageButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* Translucent box for the app name on the main page */
+.mainPageNameBox{
+	width: 200px;
+	height: 50px;
+font-size:35px;
+font-weight:bold;
+font-family:Trebuchet MS;
+color:#000000;
+text-decoration:none;
+text-shadow: 1px 1px 0px #777777;
+text-align:center;
+display:table-cell;
+vertical-align:middle;
+}
+
+/* Special button for the background image (b/c is thinner) */
+.mainPageButtonSmall {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#FFFFFF;
+	opacity:0.5;
+	-moz-border-radius:16px;
+	-webkit-border-radius:16px;
+	border-radius:16px;
+	border:1px solid #dcdcdc;
+	display:table-cell;
+	color:#000000;
+	font-family:Trebuchet MS;
+	font-size:12px;
+	font-weight:bold;
+	width: 100px;
+	height: 100px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #777777;
+	text-align:center;
+vertical-align:middle;
+}
+.mainPageButtonSmall:active {
+	background:#7FFF00;
+}
+
+/* Timeline on the main page */
+.mainPageTimeline {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#FFFFFF;
+	opacity:0.5;
+	-moz-border-radius:16px;
+	-webkit-border-radius:16px;
+	border-radius:16px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#000000;
+	font-family:Trebuchet MS;
+	font-size:28px;
+	font-weight:bold;
+	width: 200px;
+	height: 400px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #777777;
+}
+
+/* Navigation bar == left-hand thingy in the create and view event pages */
+.nav-bar-link {
+	display:inline-block;
+	float:center;
+	margin:0px -5px 0px 0px;
+	padding:10px;
+	width:250px;
+	background:#BBBBBB;
+	text-align:center;
+	font-size:28px;
+	font-family:Trebuchet MS;
+}
+
+.nav-bar-link.active {
+	background:#FFFFFF;
+}
+
+/* Title for pages e.g. Recipe Book and Create New Event */
+.pageTitle { 
+	font-family:Trebuchet MS;
+	float:left;
+	font-size:20px;
+	display:inline-block;
+	margin: 0px 15px;
+}
+
+/* Body for the right side of event pages; super duper plain and boring */
+.plainBody{
+	margin:0px;
+	padding:0px;
+	background:#FFFFFF;
+	font-family:sans-serif;
+	font-size:28px;
+	color:#000000;
+}
+
+/* Home button on non-main pages */
+.homeButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#000099;
+	border:2px solid #000000;
+	display:inline-block;
+	float:left;
+	color:#FFFFFF;
+	font-family:Trebuchet MS;
+	font-size:16px;
+	font-weight:bold;
+	width: 70px;
+	height: 30px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #777777;
+	margin:10px 10px;
+text-align:center;
+vertical-align:middle;
+}.homeButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* MakeWithFriends button on non-main pages */
+.makeButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#009900;
+	border:1px solid #000000;
+	display:inline-block;
+	color:#FFFFFF;
+	font-family:Trebuchet MS;
+	font-size:16px;
+	font-weight:bold;
+	border-radius:5px;
+	width: 60px;
+	height: 30px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #777777;
+text-align:center;
+vertical-align:middle;
+}.makeButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* Save button on non-main pages */
+.saveButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#993366;
+	border:1px solid #000000;
+	display:inline-block;
+	color:#FFFFFF;
+	font-family:Trebuchet MS;
+	font-size:16px;
+	font-weight:bold;
+	border-radius:5px;
+	width: 60px;
+	height: 30px;
+	margin: 3px 10px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #777777;
+	text-align:center;
+vertical-align:middle;
+}.saveButton:active {
+	position:relative;
+	top:1px;
+}
+
+.genericButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#FFFFFF;
+	border:2px solid #000000;
+	color:#000000;
+	font-family:Trebuchet MS;
+	font-size:16px;
+	font-weight:bold;
+	display:block;
+	padding:8px 8px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #777777;
+text-align:center;
+vertical-align:middle;
+}.genericButton:active {
+	position:relative;
+	top:1px;
+}
+
+.recipeTab {
+	display:inline-block;
+	float:left;
+	margin:0px -5px 0px 0px;
+	padding:5px;
+	margin: 5px;
+	background:#dcdcdc;
+	text-align:center;
+	font-size:20px;
+	font-family:Trebuchet MS;
+	border:solid 1px #000000;
+}
+.recipeTab.active {
+	background:#0000333399;
+}
+
+#triangle-bottomleft{
+	width = 0;
+	height = 0;
+	border-button: 40px solid #dcdcdc;
+	border-right: 40px solid transparent;
+}
+
+#triangle-bottomleft-active{
+	width = 0;
+	height = 0;
+	border-button: 40px solid #333399;
+	border-right: 40px solid transparent;
+}
+
+.recipeCard{
+	border:solid 2px #000000;
+	background:#FFFFFF;
+	width: 160px;
+	/*float: left; */
+	height: 175px;
+	margin:10px 5px 20px 5px;
+	padding:0px;
+	font-family:Trebuchet MS;
+	font-size:16px;
+	color:#000000;
+	/*display:inline-block;*/
+}
+
+.recipeRow{
+float: left; 
+overflow: hidden; 
+margin: 0px;
+position:relative;
+left:-30px;
+display:inline-block;
+min-width:200px;
+height:300px;
+}
+
+.recipeColumn{
+float: left; 
+overflow: hidden; 
+margin: 7px 0px;
+/*position:relative;
+left:-65px;*/
+display:inline-block;
+/*min-width:200px;
+height:300px;*/
+}
+
+/* Box that holds filter stuff */
+.filterBox{
+	border:solid 2px #000000;
+	background:#FFFFFF;
+	width: 200px;
+	height: 120px;
+	margin:0px;
+	padding:0px;
+	font-family:Trebuchet MS;
+	font-size:16px;
+	color:#000000;
+
+	display:inline-block;
+	float:right;
+
+}
+
+
+.smallHeading{
+	color:#000000;
+	font-family:Trebuchet MS;
+	font-size:20px;
+	text-align:center;
+}
+
+.filterRow{
+	/*display:inline-block;*/
+	width:200px;
+	border:none;
+	margin: 5px 10px;
+}
+
+/* Input textbox */
+.inputBox{
+	float:left;
+	display:inline-block;
+	/*background: #FFFFFF;
+	border: 2px solid #000000;
+	color: #000000;
+	width: 70px;
+	text-align:left;*/
+}
+
+input[type="text"]{
+	float:left;
+	display:inline-block;
+	background: #FFFFFF;
+	border: 1px solid #000000;
+	padding:0px;
+	margin:2px 5px;
+	color: #000000;
+	width: 70px;
+	text-align:left;
+	font-family:Trebuchet MS;
+	font-size:18px;
+}	

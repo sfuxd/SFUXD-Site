@@ -1,0 +1,102 @@
+#textarea{
+			display:block;
+			background: #FFFFFF;
+			border: 2px solid #000000;
+			padding:7px;
+			color: #000000;
+			width: 340px;
+			text-align:left;
+			font-family:Trebuchet MS;
+			font-size:18px;
+			float: left;
+			margin: 5px 10px;
+}
+
+.uploadRecipeSmallHeading {
+	display:block;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:28px;
+	padding:10px;
+}
+
+.smallerHeading {
+	display:inline-block;
+	text-align:center;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:22px;
+}
+
+.uploadRecipeBlocks {
+	display:inline-block;
+	float:left;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:28px;
+}
+
+.uploadRecipeButtons {
+	float:right;
+	margin: 15px;
+}
+
+.imageBox{
+	border:solid 2px #000000;
+	background:#FFFFFF;
+	width: 50px;
+	float: left;
+	height: 50px;
+	margin: 0px 10px;
+	display:inline-block;
+}
+
+.addImageButton {
+    -moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    box-shadow:inset 1px 1px 0px 0px #ffffff;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+    background-color:#CCCCCC;
+    border:1px solid #000000;
+	border-radius:5px;
+    display:inline-block;
+    color:#000000;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    padding:8px 8px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #FFFFFF;
+	text-align:center;
+	margin:10px 0 0px 260px;
+}.addImageButton:active {
+    position:relative;
+    top:1px;
+}
+
+.lineDivider{
+	border:solid 5px #000000;
+	background:#FFFFFF;
+	width: 340px;
+	float: left;
+	height: 0px;
+	margin: 10px 10px 0px 10px; /*top right bottom left*/
+	display:inline-block;
+}
+
+.orHeader{
+	color:#000000;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:20px;
+	float:left;
+	display:inline-block;
+}	
+
+.uploadRecipeHeadingSmall {
+	display:block;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:28px;
+	padding:10px;
+}
+
+.lineDividers{
+	width:765px;
+	height:30px;
+}

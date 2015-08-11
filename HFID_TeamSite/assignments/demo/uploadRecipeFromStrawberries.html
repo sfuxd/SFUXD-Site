@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../../static/css/demo.css">
+		<style>
+		input[type="text"]{
+			display:inline-block;
+			float:center;
+			background: #FFFFFF;
+			border: 2px solid #000000;
+			padding:7px;
+			color: #000000;
+			width: 430px;
+			text-align:left;
+			font-family:Trebuchet MS;
+			font-size:18px;
+			margin: 0px 10px;
+		}	
+		</style>
+	</head>
+	
+	<body>
+		<div style="position:relative; margin:40px 0px 0px 40px">
+			<img class="ipad-img" src="../../static/images/prototype/ipadRev.png">
+			<div class="template-div">
+			<div class="blueBody">
+				<center><div class = "pageTitle">Upload Recipe</div></center>
+				<center><div class="smallerHeading">Upload from a recipe website or enter your own!</div></center>
+				<div class="headingSmall">Enter URL:</div>
+				<input type="text" name="recipeURL">
+				
+				<!--OR divider-->
+				<div class="lineDividers">
+					<div class="lineDivider"></div>
+					<center><div class="orHeader">OR</div></center>
+					<div class="lineDivider"></div>
+				</div>
+				
+				<div>
+					<div class="uploadRecipeHeadingSmall">Recipe Name:</div>
+					<input type="text" name="recipeName">
+				</div>
+				
+				<!--Ingredients and instructions row-->
+				<div>
+				
+					<!--Ingredients-->
+					<div class="uploadRecipeBlocks">
+						<div class="uploadRecipeSmallHeading">Ingredients:</div>
+						<textarea id="textarea" cols="25" rows="4"></textarea>
+					</div>
+					
+					<!--Instructions-->
+					<div class="uploadRecipeBlocks">
+						<div class="uploadRecipeSmallHeading">Instructions:</div>
+						<textarea id="textarea" cols="25" rows="4"></textarea>
+					</div>
+				</div>
+				
+				<!--Images-->
+				<div>
+					<div class="uploadRecipeSmallHeading">Images:</div>
+					<div class="imageBox"></div>
+				</div>
+				
+				<div class = "addImageButton">Add Image</div>
+				
+				<!--Buttons-->
+				<div class="uploadRecipeButtons">
+					<a href="mainpage.html"><div class="submitButton">Done!</div></a>
+					<a href="recipeStrawberries.html"><div class="cancelButton">Cancel</div></a>
+				</div>
+					
+			</div>
+			</div>
+		</div>
+	
+	</body>
+
+
+</html>

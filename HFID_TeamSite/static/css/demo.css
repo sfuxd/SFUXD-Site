@@ -1,0 +1,1749 @@
+.template-div {
+    border:solid 3px;
+    width:765px;
+    height:577px;
+    position:absolute;
+    top:79px;
+    left:90px;
+	overflow:hidden;
+}
+
+.invisible{
+	display:none;
+}
+
+.visible{
+	display:inline-block;
+}
+
+a:hover{
+	cursor:pointer;
+}
+
+.pull-right {
+    float:right;
+}
+
+.pull-left {
+    float:left;
+}
+
+.mainLeft{
+	width:350px;
+	height:550px;
+	display:inline-block;	
+}
+
+.mainRight{
+	width:350px;
+	height:550px;
+	display:inline-block;
+	float:right;	
+}
+
+.createEventSummaryMargins {
+	margin: 10px 0px 5px 0px;
+}
+
+/* Normal button on the main page */
+.mainPageButton {
+     -moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    box-shadow:inset 1px 1px 0px 0px #ffffff;
+    -moz-border-radius:16px;
+    -webkit-border-radius:16px;
+    border-radius:16px;
+	background-color:rgba(255, 255, 255, 0.6);
+    width: 180px;
+    height: 40px;
+	padding: 10px;
+	font-size:26px;
+	font-weight:bold;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	color:#000000;
+	text-decoration:none;
+	text-shadow: 1px 1px 0px #777777;
+	text-align:center;
+	display:inline-block;
+	margin:10px 25px 5px 25px;
+	text-align:center;
+	border:2px solid #000000;
+	
+}.mainPageButton:active {
+    position:relative;
+    top:1px;
+}
+
+.createNewEventTitleButton {
+     -moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    box-shadow:inset 1px 1px 0px 0px #ffffff;
+	background-color:rgba(255, 255, 255, 0.6);
+    width: 200px;
+    height: 40px;
+	padding: 10px;
+	font-size:26px;
+	font-weight:bold;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	color:#000000;
+	text-decoration:none;
+	text-shadow: 1px 1px 0px #777777;
+	text-align:center;
+	display:inline-block;
+	margin:70px 0px 0px 373px;
+	text-align:center;
+	border-top:2px solid #000000;
+	border-right:2px solid #000000;
+	border-bottom:0px solid #000000;
+	border-left:2px solid #000000;
+	
+}.mainPageButton:active {
+    position:relative;
+    top:1px;
+}
+
+.editEventTitleButton {
+     -moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    box-shadow:inset 1px 1px 0px 0px #ffffff;
+	background-color:rgba(255, 255, 255, 0.6);
+    width: 250px;
+    height: 40px;
+	padding: 10px;
+	font-size:26px;
+	font-weight:bold;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	color:#000000;
+	text-decoration:none;
+	text-shadow: 1px 1px 0px #777777;
+	text-align:center;
+	display:inline-block;
+	margin:70px 0px 0px 348px;
+	text-align:center;
+	border-top:2px solid #000000;
+	border-right:2px solid #000000;
+	border-bottom:0px solid #000000;
+	border-left:2px solid #000000;
+	
+}.mainPageButton:active {
+    position:relative;
+    top:1px;
+}
+
+.cinnamonRollsEventTitleButton {
+     -moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    box-shadow:inset 1px 1px 0px 0px #ffffff;
+	background-color:rgba(255, 255, 255, 0.6);
+    width: 300px;
+    height: 40px;
+	padding: 10px;
+	font-size:26px;
+	font-weight:bold;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	color:#000000;
+	text-decoration:none;
+	text-shadow: 1px 1px 0px #777777;
+	text-align:center;
+	display:inline-block;
+	margin:70px 0px 0px 323px;
+	text-align:center;
+	border-top:2px solid #000000;
+	border-right:2px solid #000000;
+	border-bottom:0px solid #000000;
+	border-left:2px solid #000000;
+	
+}.mainPageButton:active {
+    position:relative;
+    top:1px;
+}
+
+.friendsButton {
+     -moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    box-shadow:inset 1px 1px 0px 0px #ffffff;
+    -moz-border-radius:16px;
+    -webkit-border-radius:16px;
+    border-radius:16px;
+	background-color:rgba(255, 255, 255, 0.6);
+    width: 150px;
+    height: 40px;
+	padding: 10px;
+	font-size:26px;
+	font-weight:bold;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	color:#000000;
+	text-decoration:none;
+	text-shadow: 1px 1px 0px #777777;
+	text-align:center;
+	display:inline-block;
+	margin:20px 10px 15px 40px;
+	text-align:center;
+	border:2px solid #000000;
+	
+}.friendsButton:active {
+    position:relative;
+    top:1px;
+}
+
+
+.timelineItemButton {
+     -moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    box-shadow:inset 1px 1px 0px 0px #ffffff;
+    -moz-border-radius:16px;
+    -webkit-border-radius:16px;
+    border-radius:16px;
+	background-color:rgba(255, 255, 255, 0.6);
+    width: 250px;
+    height: 80px;
+	padding: 0px;
+	font-size:26px;
+	font-weight:bold;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	color:#000000;
+	text-decoration:none;
+	text-shadow: 1px 1px 0px #777777;
+	text-align:center;
+	display:inline-block;
+	margin:5px;
+	text-align:center;
+	border:2px solid #000000;
+	position:relative;
+	
+}.timelineItemButton:active {
+    position:relative;
+    top:1px;
+}
+
+.titleButtonSize {
+    width: 300px;
+    height: 50px;
+	padding: 20px;
+	font-size:30px;
+}
+
+.titleButtonMargin {
+	margin: 25px 25px 50px 25px;
+}
+
+/* Translucent box for the app name on the main page */
+.mainPageNameButton{
+    -moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    box-shadow:inset 1px 1px 0px 0px #ffffff;
+	-moz-border-radius:16px;
+    -webkit-border-radius:16px;
+	background-color:rgba(255, 255, 255, 0.7);
+    width: 180px;
+    height: 75px;
+	padding: 5px;
+	font-size:30px;
+	font-weight:bold;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	color:#000000;
+	text-decoration:none;
+	text-shadow: 1px 1px 0px #777777;
+	text-align:center;
+	display:inline-block;
+	margin: 25px 25px 50px 25px;
+	border:2px solid #000000;
+}.mainPageNameButton:active {
+    position:relative;
+    top:1px;
+}
+#test {
+	height: 60px;
+}
+/* Special button for the background image (b/c is thinner) */
+.mainPageButtonSmall {
+    -moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    box-shadow:inset 1px 1px 0px 0px #ffffff;
+    background-color:rgba(255, 255, 255, 0.6);
+    -moz-border-radius:16px;
+    -webkit-border-radius:16px;
+    border-radius:16px;
+    display:inline-block;
+	padding:10px;
+    color:#000000;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    font-size:18px;
+    font-weight:bold;
+    width: 150px;
+    height: 80px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #777777;
+    text-align:center;
+	border:2px solid #000000;
+	margin: 270px 25px 25px 25px;
+}
+.mainPageButtonSmall:active {
+    background:rbga(200, 200, 200, 0.6);
+}
+
+/* Timeline on the main page */
+.mainPageTimeline {
+    -moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    box-shadow:inset 1px 1px 0px 0px #ffffff;
+    background-color:rgba(255, 255, 255, 0.6);
+    -moz-border-radius:16px;
+    -webkit-border-radius:16px;
+    border-radius:16px;
+    display:inline-block;
+    color:#000000;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    font-size:18px;
+    font-weight:bold;
+    width: 290px;
+    height: 520px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #777777;
+    text-align:center;
+	border:2px solid #000000;
+	margin:25px 25px 25px 25px;
+	overflow:hidden; /*Prevents last button from overflowing outside upcoming events box*/
+}
+
+.mainPageTimelineTall{
+    -moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    box-shadow:inset 1px 1px 0px 0px #ffffff;
+    background-color:rgba(255, 255, 255, 0.6);
+    -moz-border-radius:16px;
+    -webkit-border-radius:16px;
+    border-radius:16px;
+    display:inline-block;
+    color:#000000;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    font-size:18px;
+    font-weight:bold;
+    width: 290px;
+    height: 520px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #777777;
+    text-align:center;
+	border:2px solid #000000;
+	margin:25px 25px 25px 25px;
+	overflow:hidden; /*Prevents last button from overflowing outside upcoming events box*/
+}
+
+
+.nav-bar-link 
+{
+	display:inline-block;
+	float:center;
+	padding:10px;
+	text-align:left;
+	font-size:24px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	moz-box-align:left;
+	border-width:2px;
+	margin:0px -5px 0px 0px;
+	width:180px;
+	height:43px;
+	/*background:#BBBBBB;*/
+	background-color:rgba(100, 100, 100, 0.6);
+	border-style:none;
+}
+
+.nav-bar-link-2{
+	display:inline-block;
+	float:center;
+	padding:10px;
+	text-align:left;
+	font-size:24px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	moz-box-align:left;
+	margin:0px -5px 0px 0px;
+	width:180px;
+	height:45px;
+	/*background:#FFFFFF;*/
+	background-color:rgba(255, 255, 255, 0);
+}
+
+.nav-bar-link-short
+{
+	display:inline-block;
+	float:center;
+	padding:10px;
+	text-align:left;
+	font-size:24px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	moz-box-align:left;
+	border-width:2px;
+	margin:0px -5px 0px 0px;
+	width:180px;
+	height:37px;
+	/*background:#BBBBBB;*/
+	background-color:rgba(100, 100, 100, 0.6);
+	border-style:none;
+}
+
+.nav-bar-link-tall
+{
+	display:inline-block;
+	float:center;
+	padding:10px;
+	text-align:left;
+	font-size:24px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	moz-box-align:left;
+	border-width:2px;
+	margin:0px -5px 0px 0px;
+	width:180px;
+	height:70px;
+	/*background:#BBBBBB;*/
+	background-color:rgba(100, 100, 100, 0.6);
+	border-style:none;
+}
+
+.nav-bar-link-xtra-tall
+{
+	display:inline-block;
+	float:center;
+	padding:10px;
+	text-align:left;
+	font-size:24px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	moz-box-align:left;
+	border-width:2px;
+	margin:0px -5px 0px 0px;
+	width:183px;
+	height:128px;
+	/*background:#BBBBBB;*/
+	background-color:rgba(100, 100, 100, 0.6);
+	border-style:none;
+}
+
+.nav-bar-block
+{
+	display:inline-block;
+	float:center;
+	padding:10px;
+	text-align:left;
+	font-size:24px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	moz-box-align:left;
+	border-width:2px;
+	margin:0px -5px 0px 0px;
+	width:180px;
+	height:265px;
+	/*background:#BBBBBB;*/
+	background-color:rgba(100, 100, 100, 0.6);
+	border-style:none;
+}
+
+.nav-bar-link-short-2{
+	display:inline-block;
+	float:center;
+	padding:10px;
+	text-align:left;
+	font-size:24px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	moz-box-align:left;
+	margin:0px -5px 0px 0px;
+	width:180px;
+	height:34px;
+	/*background:#FFFFFF;*/
+	background-color:rgba(255, 255, 255, 0.6);
+}
+
+.nav-bar-link-tall-2{
+	display:inline-block;
+	float:center;
+	padding:10px;
+	text-align:left;
+	font-size:24px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	moz-box-align:left;
+	margin:0px -5px 0px 0px;
+	width:180px;
+	height:70px;
+	/*background:#FFFFFF;*/
+	background-color:rgba(255, 255, 255, 0);
+}
+
+.nav-bar-link-xtra-tall-2{
+	display:inline-block;
+	float:center;
+	padding:10px;
+	text-align:left;
+	font-size:24px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	moz-box-align:left;
+	margin:0px -5px 0px 0px;
+	width:180px;
+	height:127px;
+	/*background:#FFFFFF;*/
+	background-color:rgba(255, 255, 255, 0);
+}
+
+.nav-bar{
+	display:inline-block;
+	float:left;
+	width:220px;
+	height:500px;
+	/*color:#000000;*/
+	background-color:rgba(255, 255, 255, 0);
+	border:none;
+	z-index:10000;
+}
+		
+.createEventHomeButtonDiv {
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index: 1;
+	height:120px;
+}
+/* Title for pages e.g. Recipe Book and Create New Event */
+.pageTitle { 
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:35px;
+	margin:15px auto;
+	display:inline-block;
+	/*width:765px;*/
+	text-align:center;
+}
+
+.pageTitleName{
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:30px;
+	text-align:center;
+	padding:0px;
+	display:inline-block;
+}
+
+.titleBlock{
+	text-align:center;
+	display:inline-block;
+	width:220px;	
+	height:200px;
+}
+
+.plainBody
+{
+	margin:0px;
+	padding:0px;
+	background:#FFFFFF;
+	font-family:sans-serif;
+	font-size:28px;
+	color:#000000;
+}
+
+.timelineItem{
+	display:block;
+	text-align:left;
+	font-size:15px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	color:#000000;	
+	font-weight:normal;
+	margin:0px 0px 0px 40px;
+}
+.timelineItemTop{
+	display:block;
+	text-align:left;
+	font-size:18px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	color:#000000;	
+	margin:15px 0px 0px 5px;
+	font-weight:bold:
+}
+
+/* Normal button on the main page */
+.homeButton {
+    -moz-box-shadow:inset 1px 1px 0px 0px #9999FF;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #9999FF;
+    box-shadow:inset 1px 1px 0px 0px #9999FF;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+    background-color:#000099;
+    border:1px solid #000000;
+	border-radius:5px;
+    display:inline-block;
+    color:#FFFFFF;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    width: 64px;
+	height:24px;
+	padding:3px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #000000;
+	text-align:center;
+	margin:25px 0px 0px 35px;
+}.homeButton:active {
+    position:relative;
+    top:1px;
+}
+
+.saveButton1 {
+	-moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+	box-shadow:inset 1px 1px 0px 0px #FF9999;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#F5A9F2;
+	border:1px solid #000000;
+	display:inline-block;
+	color:#FFFFFF;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	width: 64px;
+	height: 24px;
+	padding:3px;
+	margin: 0px 10px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #CCCCCC;
+	text-align:center;
+}.saveButton1:active {
+	position:relative;
+	top:1px;
+}
+
+.saveButton2 {
+	-moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+	box-shadow:inset 1px 1px 0px 0px #FF9999;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#F5A9F2;
+	border:1px solid #000000;
+	display:inline-block;
+	color:#FFFFFF;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	width: 64px;
+	height: 24px;
+	padding:3px;
+	margin: 0px 10px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #CCCCCC;
+	text-align:center;
+}.saveButton2:active {
+	position:relative;
+	top:1px;
+}
+
+.saveButton3 {
+	-moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+	box-shadow:inset 1px 1px 0px 0px #FF9999;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#F5A9F2;
+	border:1px solid #000000;
+	display:inline-block;
+	color:#FFFFFF;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	width: 64px;
+	height: 24px;
+	padding:3px;
+	margin: 0px 10px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #CCCCCC;
+	text-align:center;
+}.saveButton3:active {
+	position:relative;
+	top:1px;
+}
+
+.saveButton4 {
+	-moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+	box-shadow:inset 1px 1px 0px 0px #FF9999;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#F5A9F2;
+	border:1px solid #000000;
+	display:inline-block;
+	color:#FFFFFF;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	width: 64px;
+	height: 24px;
+	padding:3px;
+	margin: 0px 10px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #CCCCCC;
+	text-align:center;
+}.saveButton4:active {
+	position:relative;
+	top:1px;
+}
+
+.saveButton5 {
+	-moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+	box-shadow:inset 1px 1px 0px 0px #FF9999;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#F5A9F2;
+	border:1px solid #000000;
+	display:inline-block;
+	color:#FFFFFF;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	width: 64px;
+	height: 24px;
+	padding:3px;
+	margin: 0px 10px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #CCCCCC;
+	text-align:center;
+}.saveButton5:active {
+	position:relative;
+	top:1px;
+}
+
+.saveButton6 {
+	-moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+	box-shadow:inset 1px 1px 0px 0px #FF9999;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#F5A9F2;
+	border:1px solid #000000;
+	display:inline-block;
+	color:#FFFFFF;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	width: 64px;
+	height: 24px;
+	padding:3px;
+	margin: 0px 10px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #CCCCCC;
+	text-align:center;
+}.saveButton6:active {
+	position:relative;
+	top:1px;
+}
+
+.saveButton {
+	-moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+	box-shadow:inset 1px 1px 0px 0px #FF9999;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#F5A9F2;
+	border:1px solid #000000;
+	display:inline-block;
+	color:#FFFFFF;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	width: 64px;
+	height: 24px;
+	padding:3px;
+	margin: 0px 10px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #CCCCCC;
+	text-align:center;
+}.saveButton:active {
+	position:relative;
+	top:1px;
+}
+
+.makeButton {
+	-moz-box-shadow:inset 1px 1px 0px 0px #99FF99;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #99FF99;
+	box-shadow:inset 1px 1px 0px 0px #99FF99;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#A9F5A9;
+	border:1px solid #000000;
+	display:inline-block;
+	color:#FFFFFF;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	width: 54px;
+	height: 24px;
+	margin: 0px;
+	padding:3px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #CCCCCC;
+	text-align:center;
+}.makeButton:active {
+	position:relative;
+	top:1px;
+}
+
+.horzSpace{
+	width:138px;
+	background:none;	
+	display:inline-block;
+}
+
+.smallHorzSpace{
+	width:65px;
+	background:none;	
+	display:inline-block;
+}
+
+.book{
+	width:100px;
+	height:120px;
+	margin:4px 14px 4px 14px;
+	display:inline-block;
+	text-align:center;
+	float:center;
+	padding:5px;
+}
+
+.friendMain{
+	width:100px;
+	height:115px;
+	margin:4px 0px 4px 0px;
+	display:inline-block;
+	text-align:center;
+	float:center;
+	padding:5px;
+	position:relative;
+}
+
+.x{
+	position:relative;
+	z-index:5000;
+	height:0px;
+	margin-top:-6px;
+	margin-right:2px;
+	float:right;
+	top:-3px;
+}
+
+.xCreateEventMargin {
+	margin:0px 0px 0px 5px;
+	float: right;
+}
+
+.shelf{
+	width:715px;
+	height:120px;
+	margin:10px 25px 10px 25px;
+	border:none;
+	display:inline-block;
+}
+
+.genericButton {
+    -moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    box-shadow:inset 1px 1px 0px 0px #ffffff;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+    background-color:#CCCCCC;
+    border:1px solid #000000;
+	border-radius:5px;
+    display:inline-block;
+    color:#000000;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    padding:8px 8px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #FFFFFF;
+	text-align:center;
+	margin:5px;
+}.genericButton:active {
+    position:relative;
+    top:1px;
+}
+
+.newFriendBox{
+	border:1px solid #000000;
+	border-radius:10px;
+	display:none;
+	width:290px;
+	height:90px;
+	color:#000000;
+	background-color:rgba(255, 255, 255, 0.6);
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:16px;
+	padding:7px 7px 7px 7px;
+	text-align:left;
+	float:right;
+}
+
+.newFriendBoxThin{
+	border:1px solid #000000;
+	border-radius:10px;
+	display:none;
+	width:218px;
+	height:95px;
+	color:#000000;
+	background-color:rgba(255, 255, 255, 0.6);
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:16px;
+	padding:5px 15px 5px 15px;
+	margin: 10px 10px 10px 10px;
+	text-align:left;
+	float:right;
+}
+
+.mainRightTab{
+	background-color:rgba(100, 100, 100, 0.8);
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:24px;
+	display:inline-block;
+	width:145px;
+	height:40px;
+	padding:20px 0px 15px 0px;
+	margin:0px 0px 5px 0px;
+	border-top-right-radius:14px;
+	float:right;
+}
+
+.mainRightTab-2{
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:24px;
+	display:inline-block;
+	width:145px;
+	height:70px;
+	padding:5px 0px 0px 0px;
+	margin:0px 0px 5px 0px;
+	border-top-left-radius:14px;
+	float:left;
+}
+
+.newFriendButton {
+    -moz-box-shadow:inset 1px 1px 0px 0px #99CCFF;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #99CCFF;
+    box-shadow:inset 1px 1px 0px 0px #99CCFF;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+    background-color:rgba(255, 255, 255, 0.6);
+    border:1px solid #000000;
+	border-radius:10px;
+    display:inline-block;
+    color:#000000;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:bold;
+	height:70px;
+	width:60px;
+    padding:15px 20px 15px 20px;
+	margin:10px 20px 0px 0px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #CCCCCC;
+	text-align:center;
+	float:right;
+}.newFriendButton:active {
+    position:relative;
+    top:1px;
+}
+.newFriendButton:hover {
+	cursor:pointer;
+}
+
+
+
+.blueBody{
+	background:#99CCFF;
+	height:576px;
+}
+
+.strawberryBody{
+	background:url("../../revisedMockups/assets/strawberriesBg.png");
+	height:576px;
+}
+		
+.eventBox{
+	display:inline-block;
+	float:center;
+	width:763px;
+	height:445px;
+	margin: 0px -5px 0px 0px;
+	/*background:#FFFFFF;*/
+	background-color:rgba(255, 255, 255, 0.6);
+	border:solid 2px #000000;
+}
+		
+.recipeBox{
+	display:inline-block;
+	float:center;
+	/*background:#FFFFFF;*/
+	background-color:rgba(255, 255, 255, 0);
+	width:450px;
+	height:405px;
+	border:none;
+}
+	
+.headingSmall {
+	display:inline-block;
+	text-align:center;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:28px;
+	padding:10px;
+}
+
+.headingSmall2 {
+	display:inline-block;
+	text-align:center;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:24px;
+	padding:5px;
+}
+
+.align-bottom-left
+{
+	position:relative;
+	bottom:20
+	left:5
+}	
+
+a:link{
+	color:#000000;
+	text-decoration:none;
+}		
+a:visited{
+	color:#000000;
+	text-decoration:none;
+}		
+a:hover{
+	color:#000000;
+	text-decoration:none;
+}		
+a:active{
+	color:#000000;
+	text-decoration:none;
+}		
+
+.nav-bar-toggle{
+	display:none;
+	width:450px;
+	margin-left:38px;
+	text-align:center;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:18px;
+}
+.nav-bar-toggle-2{
+	display:inline-block;
+	width:450px;
+	margin-left:38px;
+	text-align:center;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:18px;
+}
+
+.uploadRecipeButton {
+	-moz-box-shadow:inset 1px 1px 0px 0px #FF99CC;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #FF99CC;
+	box-shadow:inset 1px 1px 0px 0px #FF99CC;
+	background-color:#990066;
+	padding:7px;
+	-moz-border-radius:16px;
+	-webkit-border-radius:16px;
+	border-radius:16px;
+	border:1px solid #000000;
+	display:inline-block;
+	float:center;
+	color:#FFFFFF;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:18px;
+	width:300px;
+	height:25px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #000000;
+	text-align:center;
+}.uploadRecipeButton:active {
+	position:relative;
+	top:1px;
+}
+
+.friendsBox{
+	display:inline-block;
+	margin:auto;
+	width:370px;
+	height:400px;
+	color:#FFFFFF;
+	text-align:center;
+}
+
+.friendBlock{
+	display:inline-block;
+	float:left;
+	width:110px;
+	height:120px;
+	margin:5px 0px 5px 0px;
+	text-align:center;
+	border:none;
+}
+
+.friendBlock2{
+	display:inline-block;
+	float:center;
+	width:110px;
+	height:120px;
+	margin:1px -2px 1px -2px;
+	text-align:center;
+	border:2px solid #00CC00;
+}
+
+.friend{
+	display:inline-block;
+	float:center;
+}
+
+.friendOutline{
+	display:inline-block;
+	float:center;
+	border:1px solid #000000;
+	margin:0px 0px 0px 0px;
+	height:100px;
+	position:relative;
+	z-index:4000;
+}
+
+
+.friendTag{
+	display:inline-block;
+	float:center;
+	color:#000000;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:16px;
+	text-align:center;
+}
+
+.submitButton {
+	-moz-box-shadow:inset 1px 1px 0px 0px #99FF99;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #99FF99;
+	box-shadow:inset 1px 1px 0px 0px #99FF99;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:rgba(0, 160, 0, 0.8);
+	border:1px solid #000000;
+	display:inline-block;
+	color:#FFFFFF;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:16px;
+	border-radius:5px;
+	height: 25px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #000000;
+	text-align:center;
+	padding:4px;
+}.submitButton:active {
+	position:relative;
+	top:1px;
+}	
+
+.cancelButton {
+	-moz-box-shadow:inset 1px 1px 0px 0px #FF9999;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #FF9999;
+	box-shadow:inset 1px 1px 0px 0px #FF9999;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:rgba(160, 0, 0, 0.8);
+	border:1px solid #000000;
+	display:inline-block;
+	color:#FFFFFF;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:16px;
+	border-radius:5px;
+	height: 25px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #000000;
+	text-align:center;
+	padding:4px;
+}.cancelButton:active {
+	position:relative;
+	top:1px;
+}
+
+.buttonBlock{
+	display:inline-block;
+	width:300px;
+	text-align:center;
+	margin:20px 10px 10px 10px;
+}
+
+.alignLeftBlock{
+	text-align:left;
+}
+
+.top-row{
+	width:765px;
+	height:115px;
+	display:inline-block;
+}
+
+.tabs{
+	display:inline-block;
+	margin:0px;
+	padding:0px;
+	width:756px;
+	height:33px;
+}
+
+.recipeBook{
+	width:956px;
+	height:430px;
+	background-color:#FFFFFF;
+	position:relative;
+	left:-65px;
+}
+
+.recipeBookSingle{
+	width:765px;
+	height:430px;
+	background-color:#FFFFFF;
+}
+
+.vertical-buttons{
+	margin:10px 10px;
+	display:inline-block;
+	float:left;
+	width:180px;
+}
+
+.verticalSmall{
+	margin:10px 10px;
+	display:inline-block;
+	width:100px;
+	height:100px;
+	float:left;
+	text-align:center;
+}
+
+.recipeCard{
+	border:solid 2px #000000;
+	background:#FFFFFF;
+	width: 160px;
+	/*float: left; */
+	height: 160px;
+	padding:0px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:16px;
+	color:#000000;
+	text-align:center;
+	/*display:inline-block;*/
+}
+
+.greaterRecipeCard{
+	width:160px;
+	height:175px;
+	margin:5px 5px 20px 5px;	
+	display:inline-block;
+}
+
+.recipeRow{
+	float: left; 
+	overflow: hidden; 
+	margin: 0px;
+	position:relative;
+	left:-30px;
+	display:inline-block;
+	min-width:200px;
+	height:300px;
+}
+
+.recipeColumn{
+	float: left; 
+	margin: 7px 7px;
+	position:relative;
+	left:-30px;
+	display:inline-block;
+	width:180px;
+	height:410px;
+	/*min-width:200px;
+	height:300px;*/
+}
+
+.recipeColumnRight{
+	float: left; 
+	margin: 7px 0px 0px 0px;
+	position:relative;
+	left:-20px;
+	display:inline-block;
+	width:180px;
+	height:410px;
+	overflow:hidden;
+	/*min-width:200px;
+	height:300px;*/
+}
+
+.recipeColumnLeft{
+	float: left; 
+	margin: 7px 10px 0px 0px;
+	position:relative;
+	left:-30px;
+	display:inline-block;
+	width:180px;
+	height:410px;
+	overflow:hidden;
+	text-align:left;
+	padding:0px;
+	/*min-width:200px;
+	height:300px;*/
+}
+
+/* Box that holds filter stuff */
+.filterBox{
+	border:solid 2px #000000;
+	background:#FFFFFF;
+	width: 200px;
+	height: 120px;
+	margin:0px;
+	padding:0px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:16px;
+	color:#000000;
+	margin:5px;
+	display:inline-block;
+	float:right;
+
+}
+
+.smallHeading{
+	color:#000000;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:20px;
+	text-align:center;
+}
+
+.filterRow{
+	/*display:inline-block;*/
+	width:200px;
+	border:none;
+	margin: 5px 10px;
+}
+
+.inputBox{
+	float:left;
+	display:inline-block;
+	/*background: #FFFFFF;
+	border: 2px solid #000000;
+	color: #000000;
+	width: 70px;
+	text-align:left;*/
+}
+
+.recipeTab{
+	padding:5px;
+	margin:0px;
+	background:#999999;
+	border:none;
+	color:#000000;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:18px;
+	text-align:center;	
+	display:inline-block;	
+}
+
+.recipeTab2{
+	padding:5px;
+	margin:0px;
+	background:#FFFFFF;
+	border:none;
+	color:#000000;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:18px;
+	text-align:center;	
+	display:inline-block;	
+}
+
+.largeRecipeCard{
+	border:2px solid #000000;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:18px;
+	text-align:left;	
+	display:inline-block;			
+	padding:10px 10px 10px 10px;
+	width:692px;
+	height:357px;
+	float:left;
+	margin:25px 25px 25px 25px;
+}
+
+.largeRecipeColumn{
+	border:none;
+	display:inline-block;
+	height:330px;
+	width:320px;
+	padding:10px 10px 10px 10px;
+	background-color:#FFFFFFFF;
+	margin:0px 0px 0px 0px;
+	float:left;
+}
+
+.editButton{
+	-moz-box-shadow:inset 1px 1px 0px 0px #FFFF99;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #FFFF99;
+	box-shadow:inset 1px 1px 0px 0px #FFFF99;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#999900;
+	border:2px solid #000000;
+	border-radius:5px;
+	display:inline-block;
+	color:#FFFFFF;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:16px;
+	height: 25px;
+	margin: 10px 5px 0px 0px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #000000;
+	text-align:center;
+	padding:4px;
+}.editButton:active {
+	position:relative;
+	top:1px;
+}
+
+.pictureButton{
+	-moz-box-shadow:inset 1px 1px 0px 0px #CCCCFF;
+	-webkit-box-shadow:inset 1px 1px 0px 0px #CCCCFF;
+	b
+	ox-shadow:inset 1px 1px 0px 0px #CCCCFF;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#6666FF;
+	border:2px solid #000000;
+	border-radius:5px;
+	display:inline-block;
+	color:#FFFFFF;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:16px;
+	height: 25px;
+	margin: 10px 5px 0px 0px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #000000;
+	text-align:center;
+	padding:4px;
+}.pictureButton:active {
+	position:relative;
+	top:1px;
+}
+		
+.largeRecipeButtons{
+	border:none;
+	display:inline-block;
+	height:100px;
+	width:230px;
+	float:center;
+	margin:10px 0px 0px 0px;
+	padding:0px 0px 0px 0px;	
+	text-align:center;
+}
+
+.calendar{
+	width:350px;
+	height:200px;
+	display:inline-block;
+	float:center;	
+	text-align:center;
+	border:1px solid #000000;
+}
+
+.date{
+	width:48px;
+	height:38px;
+	display:inline-block;
+	margin:0px 0px 0px 0px;
+	text-align:center;	
+	border:1px solid #000000;
+	float:left;
+	background-color:#CCCCCC;
+}
+
+.date2{
+	width:50px;
+	height:40px;
+	display:inline-block;
+	margin:0px 0px 0px 0px;
+	text-align:center;	
+	border:none;
+	float:left;
+	background-color:#99FF99;
+}
+
+.dateHolder{
+	width:48px;
+	height:38px;
+	display:inline-block;
+	margin:0px 0px 0px 0px;
+	text-align:center;	
+	border:1px solid #000000;
+	float:left;
+}
+
+.eventTitleWrapper{
+	width:540px;
+	height:50px;	
+	display:inline-block;
+	text-align:center;
+}
+
+.subTimeline{
+	width:270px;
+	height:500px;
+	overflow:hidden;
+	margin:0px 9px 0px 9px;
+	
+}
+
+.subTimelineTall{
+	display:none;
+	width:270px;
+	height:500px;
+	overflow:hidden;
+	margin:0px 9px 0px 9px;
+}
+
+.subTimelineTall-2{
+	width:270px;
+	height:500px;
+	overflow:hidden;
+	margin:0px 9px 0px 9px;
+}
+
+.select:hover {
+	cursor:pointer;
+}
+
+.friendsSelected {
+	height:120px;
+	overflow:hidden;
+}
+.friendsSelectedNormal {
+	display:inline-block;
+	height:120px;
+	overflow:hidden;
+	width:330px;
+	float:left;
+}
+
+.friendsSelectedOverflow {
+	display:inline-block;
+	height:120px;
+	overflow:hidden;
+	width:300px;
+	position:relative;
+	left:330px;
+	top:-120px;
+}
+.recipeItem{
+	display:block;	
+}
+#textarea{
+			display:block;
+			background: #FFFFFF;
+			border: 2px solid #000000;
+			padding:7px;
+			color: #000000;
+			width: 340px;
+			text-align:left;
+			font-family:Trebuchet MS;
+			font-size:18px;
+			float: left;
+			margin: 5px 10px;
+}
+
+.uploadRecipeSmallHeading {
+	display:block;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:28px;
+	padding:10px;
+}
+
+.smallerHeading {
+	display:inline-block;
+	text-align:center;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:22px;
+}
+
+.uploadRecipeBlocks {
+	display:inline-block;
+	float:left;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:28px;
+}
+
+.uploadRecipeButtons {
+	float:right;
+	margin: 15px;
+}
+
+.imageBox{
+	border:solid 2px #000000;
+	background:#FFFFFF;
+	width: 50px;
+	float: left;
+	height: 50px;
+	margin: 0px 10px;
+	display:inline-block;
+}
+
+.addImageButton {
+    -moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    box-shadow:inset 1px 1px 0px 0px #ffffff;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+    background-color:#CCCCCC;
+    border:1px solid #000000;
+	border-radius:5px;
+    display:inline-block;
+    color:#000000;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    padding:8px 8px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #FFFFFF;
+	text-align:center;
+	margin:10px 0 0px 260px;
+}.addImageButton:active {
+    position:relative;
+    top:1px;
+}
+
+.lineDivider{
+	border:solid 5px #000000;
+	background:#FFFFFF;
+	width: 340px;
+	float: left;
+	height: 0px;
+	margin: 10px 10px 0px 10px; /*top right bottom left*/
+	display:inline-block;
+}
+
+.orHeader{
+	color:#000000;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:20px;
+	float:left;
+	display:inline-block;
+}	
+
+.uploadRecipeHeadingSmall {
+	display:block;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:28px;
+	padding:10px;
+}
+
+.lineDividers{
+	width:765px;
+	height:30px;
+}
+
+.dietaryNeedsButton {
+    -moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    -webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+    box-shadow:inset 1px 1px 0px 0px #ffffff;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+    background-color:#CCCCCC;
+    border:1px solid #000000;
+	border-radius:5px;
+    display:inline-block;
+	float:left;
+    color:#000000;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    padding:8px 8px;
+    text-decoration:none;
+    text-shadow:1px 1px 0px #FFFFFF;
+	text-align:center;
+	margin:35px 20px;
+}.dietaryNeedsButton:active {
+    position:relative;
+    top:1px;
+}
+
+.food{
+	font-size:26px;	
+	margin: 5px;
+}
+
+.dietaryNeedsTopRow {
+    font-weight:bold;
+	margin: 0px 0px 0px 10px;
+	width:756px;
+	height:50px;
+	display:inline-block;
+	float:left;
+}
+
+.foodPreferences{
+	display:inline-block;
+	float:left;
+	margin:5px;
+	width:350px;
+}
+
+.select:hover {
+	cursor:pointer;
+}
+
+.homeButtonDiv{
+	margin:0px 0px 0px 250px;
+	display:inline-block;
+	width:50px;
+	height:30px;
+	float:left;
+}
+
+.backButtonDiv{
+	margin:23px 50px 0px 0px;
+	display:inline-block;
+	width:50px;
+	height:30px;
+	float:right;
+}
+
+/* Title for pages e.g. Recipe Book and Create New Event */
+.dietaryNeedsTitle { 
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:40px;
+	text-align:center;
+	padding:10px 0px 10px 0px;
+	display:inline-block;
+	float:left; 
+}
+
+.createEventTopRow{
+	width:756px;
+	height:60px;
+	float:left;
+}
+
+#eName, #eFriends, #eRecipes, #eDate, #eTime, #eLocation, #eSummary {
+	height:20px;
+	font-size:14px;
+	overflow:hidden;
+}
+
+#eDate, #eTime {
+	float:left;
+	display:inline-block;
+	margin-right:15px;
+}
+
+#eLocation {
+	width:180px;
+}
+
+#sDish_Recipe, #sIngredient_Recipe {
+	float: right;
+}
+
+.ingredient {
+	float:right;
+	margin:0px 15px 0px 0px;
+	font-size:14px;
+}
+
+.ingrListItem, .dishListItem {
+	width:200px;
+	height: 20px;
+}
+
+.f_selected {
+	border:2px solid #00CC00;
+	margin:3px -2px;
+}
+
+
+.instructions {
+	display:inline-block;
+	width:370px;
+	float:left;
+	margin:25px 0px 0px 25px;
+}

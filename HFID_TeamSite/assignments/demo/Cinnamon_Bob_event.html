@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../../static/css/demo.css">	
+		<style>
+		input[type="text"]{
+			display:inline-block;
+			float:center;
+			background: #FFFFFF;
+			border: 2px solid #000000;
+			padding:7px;
+			color: #000000;
+			width: 430px;
+			text-align:left;
+			font-family:Trebuchet MS;
+			font-size:18px;
+		}	
+		</style>
+	</head>
+	
+	<body>
+		<script type="text/javascript">
+			<!--
+			console.log("test");
+			function toggle_visibility(idt, idb) {
+				var tabs = new Array('overviewTab', 'ingredientsTab', 'commentsTab');
+				var blocks = new Array('overviewBlock', 'ingredientsBlock', 'commentsBlock');
+				var b = document.getElementById(idb);
+				var t = document.getElementById(idt);
+				for(i=0;i<tabs.length;i++){
+					document.getElementById(blocks[i]).style.display = 'none';
+					tab = document.getElementById(tabs[i]);
+					tab.style.margin = '0px -5px 0px 0px';
+					tab.style.width = '180px';
+					tab.style.height = '37px';
+					tab.style.background = '#BBBBBB';
+					tab.style.border = '2px none';
+				}
+				b.style.display = 'inline-block';
+				t.style.margin = '0px -5px 0px 0px';
+				t.style.width = '182px';
+				t.style.height = '34px';
+				t.style.background = '#FFFFFF';
+				t.style.border = '2px none solid none solid';
+			}
+			function toggleFriend(id){
+				var f = document.getElementById(id);
+				if(f.style.border == 'none'){
+					f.style.border = '2px solid #00CC00';
+					f.style.margin = '3px -2px 3px -2px';
+				}
+				else
+					f.style.border = 'none';
+					f.style.margin = '5px 0px 5px 0px';
+			}
+			
+			function toggleDate(id){
+				var d = document.getElementById(id);
+				if(d.style.border != 'none'){
+					d.style.background = '#99FF99';
+					d.style.height = '40px';
+					d.style.width = '50px';
+					d.style.border = 'none';
+				}
+				else{
+					d.style.background = '#CCCCCC';
+					d.style.border = '1px solid #000000';
+					d.style.height = '38px';
+					d.style.width = '48px';
+				}
+			}
+			//-->
+		</script>
+		<div style="position:relative; margin:40px 0px 0px 40px">
+			<img class="ipad-img" src="../../static/images/prototype/ipadRev.png">
+			<div class="template-div">  <!--756 by 576-->
+				<div class="blueBody">
+					<!-- PUT STUFF HERE -->
+					
+					<div>
+						<a href="mainpage.html"><div class="homeButton">Home</div></a>
+						<div class="eventTitleWrapper"><div class="pageTitle">Cinnamon Rolls</div></div>
+					</div>
+					
+					<div class="eventBox">
+						<div class="nav-bar">
+							<a href="#" onclick="toggle_visibility('overviewTab', 'overviewBlock');"><div class="nav-bar-link-short-2" id="overviewTab">Overview
+							</div></a>
+							<a href="#" onclick="toggle_visibility('ingredientsTab', 'ingredientsBlock');"><div class="nav-bar-link-short" id="ingredientsTab">Ingredients</div></a>
+							<a href="#" onclick="toggle_visibility('commentsTab', 'commentsBlock');"><div class="nav-bar-link-short" id="commentsTab">Comments</div></a>
+							<div class="nav-bar-block"> </div>
+						</div>
+						<div class="nav-bar-toggle-2" id="overviewBlock">
+							<div class="alignLeftBlock">
+								<p>What: Cinnamon Rolls</p>
+								<p>When: October 31st, 2012 at 11:00 AM</p>
+								<p>Where: Bob's house</p>
+								<p>Scheduled by: Bob</p>
+								<p>Invited:</p>
+								<center>
+									<div class="friendBlock">
+										<div class="friend"><img src="../../static/images/prototype/people/sara.jpg" width="90px"></div>
+										<div class="friendTag">Sara Y.</div>
+									</div>
+									<div class="friendBlock">
+										<div class="friend"><img src="../../static/images/prototype/people/joe.jpg" width="90px"></div>
+										<div class="friendTag">Joe F.</div>
+									</div>
+									<div class="friendBlock">
+										<div class="friend"><img src="../../static/images/prototype/people/bob.jpg" width="90px"></div>
+										<div class="friendTag">Bob R.</div>
+									</div>
+								</center>
+							</div>
+						</div>
+						<div class="nav-bar-toggle" id="ingredientsBlock">
+							<div class="recipeBox">
+								<div class="headingSmall">Tap a checkbox to claim an item to bring!</div>
+								<div class="alignLeftBlock">
+									<p><input type="checkbox" name="checkbox1">2 c flour</p>
+									<p><input type="checkbox" name="checkbox2">1 c + 2 Tbsp sugar</p>
+									<p><input type="checkbox" name="checkbox3">4 tsp baking powder</p>
+									<p><input type="checkbox" name="checkbox4">1 tsp salt</p>
+									<p><input type="checkbox" name="checkbox4">7 Tbsp butter</p>
+									<p><input type="checkbox" name="checkbox4">3/4 c milk</p>
+									<p><input type="checkbox" name="checkbox4">3 tsp cinnamon</p>
+								</div>
+							</div>
+						</div>
+						<div class="nav-bar-toggle" id="commentsBlock">
+							<div class="headingSmall">Comments</div>
+								<div class="alignLeftBlock">
+									<input type="text" name="eventLocation" value="Your Comment Here">
+									<p> 10/30 - Deirdre says: That's really funny!  Sounds like a fun project. </p>
+									<p> 10/30 - Joe says: Did you realize that my HFID's team icon is a cinnamon roll?  The fallera hairstyle looks like the Princess Leia cinnamon-buns :) </p>
+									<p> 10/18 - Sara says: Any excuse to put more cinnamon in food is good by me! </p>
+									<p> 10/10 - Bob says: I like cinnamon rolls, but I like them extra-cinnamony.  Do any of you mind if we add some extra cinnamon to the filling?  I think it'll turn out deliciously :D </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+

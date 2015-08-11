@@ -1,0 +1,155 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1290" measuredH="504" mockupW="941" mockupH="480">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="500" y="24" w="640" h="480" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>roundedSolid</borderStyle>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="940" y="33" w="196" h="45" measuredW="184" measuredH="41" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <size>32</size>
+        <text>Recipe%20Book</text>
+      </controlProperties>
+    </control>
+    <control controlID="71" controlTypeID="com.balsamiq.mockups::Canvas" x="349" y="133" w="299" h="334" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="97" controlTypeID="com.balsamiq.mockups::Paragraph" x="1008" y="345" w="143" h="108" measuredW="200" measuredH="80" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Cook%20Time%3A%2045%20min%0A%20%0A2%20Large%20Lemons%0A4%20lbs%20of%20Chicken%0A3%20sprigs%20of%20Rosemary%0A2T%20sage%0A%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="101" controlTypeID="com.balsamiq.mockups::Label" x="373" y="145" w="257" h="85" measuredW="103" measuredH="26" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <size>18</size>
+        <text>Pesto%20Pasta</text>
+      </controlProperties>
+    </control>
+    <control controlID="104" controlTypeID="com.balsamiq.mockups::Button" x="516" y="42" w="-1" h="-1" measuredW="57" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Home</text>
+      </controlProperties>
+    </control>
+    <control controlID="105" controlTypeID="com.balsamiq.mockups::Canvas" x="671" y="133" w="305" h="334" measuredW="100" measuredH="70" zOrder="6" locked="false" isInGroup="-1"/>
+    <control controlID="106" controlTypeID="com.balsamiq.mockups::Label" x="727" y="147" w="-1" h="-1" measuredW="189" measuredH="26" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <size>18</size>
+        <text>Sundried%20Tomato%20Pizza</text>
+      </controlProperties>
+    </control>
+    <control controlID="107" controlTypeID="com.balsamiq.mockups::Canvas" x="995" y="135" w="291" h="330" measuredW="100" measuredH="70" zOrder="8" locked="false" isInGroup="-1"/>
+    <control controlID="108" controlTypeID="com.balsamiq.mockups::Label" x="988" y="151" w="302" h="77" measuredW="189" measuredH="26" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <size>18</size>
+        <text>Tuscan%20Lemon%20Chicken</text>
+      </controlProperties>
+    </control>
+    <control controlID="112" controlTypeID="com.balsamiq.mockups::Paragraph" x="1135" y="345" w="143" h="108" measuredW="200" measuredH="80" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%20%0A%20%0A1T%20Garlic%0A1/3%20c%20Olive%20Oil%0A1/4%20c%20White%20Wine%0ASalt%20and%20Pepper%0A%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="113" controlTypeID="com.balsamiq.mockups::Paragraph" x="699" y="336" w="143" h="108" measuredW="200" measuredH="80" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Cook%20Time%3A%201%20hr%20%0A%20%0A%203C%20Flour%0A1%20%BD%20c%20Water%0A1%20package%20Yeast%0A2%20c%20Dried%20Tomatoes</text>
+      </controlProperties>
+    </control>
+    <control controlID="114" controlTypeID="com.balsamiq.mockups::Paragraph" x="826" y="335" w="143" h="108" measuredW="200" measuredH="80" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%20%0A%20%0A1/4%20c%20Basil%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0A1/8%20c%20Pine%20Nuts%0A1/2%20c%20Olive%20Oil%0A1/4%20c%20Red%20Wine</text>
+      </controlProperties>
+    </control>
+    <control controlID="115" controlTypeID="com.balsamiq.mockups::Paragraph" x="373" y="345" w="143" h="108" measuredW="200" measuredH="80" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Cook%20Time%3A%2030%20min%0A%20%0A1%20c%20Basil%0A1/2%20c%20Olive%20Oil%0A1/4%20c%20Minced%20Garlic%0A10%20oz%20Rotini</text>
+      </controlProperties>
+    </control>
+    <control controlID="116" controlTypeID="com.balsamiq.mockups::TabBar" x="500" y="87" w="640" h="417" measuredW="261" measuredH="100" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <tabVPosition>top</tabVPosition>
+        <text>Italian%2C%20Asian%20Fusion%2C%20Desserts</text>
+      </controlProperties>
+    </control>
+    <control controlID="117" controlTypeID="com.balsamiq.mockups::RoundButton" x="553" y="91" w="17" h="23" measuredW="32" measuredH="32" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <shape>triangle</shape>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="118" controlTypeID="com.balsamiq.mockups::RoundButton" x="524" y="91" w="37" h="25" measuredW="32" measuredH="32" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>16777215</borderColor>
+        <shape>rectangle</shape>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="119" controlTypeID="com.balsamiq.mockups::Label" x="524" y="90" w="44" h="19" measuredW="38" measuredH="21" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Italian</text>
+      </controlProperties>
+    </control>
+    <control controlID="120" controlTypeID="com.balsamiq.mockups::Button" x="858" y="464" w="120" h="27" measuredW="116" measuredH="27" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>40463</color>
+        <size>12</size>
+        <text>Make%20with%20friends</text>
+      </controlProperties>
+    </control>
+    <control controlID="121" controlTypeID="com.balsamiq.mockups::Button" x="592" y="42" w="-1" h="-1" measuredW="130" measuredH="27" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Upload%20new%20recipe</text>
+      </controlProperties>
+    </control>
+    <control controlID="122" controlTypeID="com.balsamiq.mockups::Label" x="942" y="133" w="-1" h="-1" measuredW="32" measuredH="18" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6710886</color>
+        <size>11</size>
+        <text>Bob%27s</text>
+      </controlProperties>
+    </control>
+    <control controlID="123" controlTypeID="com.balsamiq.mockups::Label" x="618" y="133" w="-1" h="-1" measuredW="29" measuredH="18" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6710886</color>
+        <size>11</size>
+        <text>Mine</text>
+      </controlProperties>
+    </control>
+    <control controlID="124" controlTypeID="com.balsamiq.mockups::Label" x="1256" y="135" w="-1" h="-1" measuredW="29" measuredH="18" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>6710886</color>
+        <size>11</size>
+        <text>Mine</text>
+      </controlProperties>
+    </control>
+    <control controlID="128" controlTypeID="com.balsamiq.mockups::Image" x="393" y="183" w="210" h="147" measuredW="360" measuredH="253" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/pesto%2520pasta.jpg</src>
+      </controlProperties>
+    </control>
+    <control controlID="129" controlTypeID="com.balsamiq.mockups::Image" x="705" y="183" w="235" h="147" measuredW="640" measuredH="427" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/sundriedTomatoPizza.jpg</src>
+      </controlProperties>
+    </control>
+    <control controlID="130" controlTypeID="com.balsamiq.mockups::Image" x="1033" y="183" w="220" h="147" measuredW="800" measuredH="533" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/tuscan%2520lemon%2520chicken.JPG</src>
+      </controlProperties>
+    </control>
+    <control controlID="131" controlTypeID="com.balsamiq.mockups::Button" x="671" y="464" w="134" h="27" measuredW="128" measuredH="27" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>545684</color>
+        <size>12</size>
+        <text>I%20want%20to%20make%20this%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="132" controlTypeID="com.balsamiq.mockups::Paragraph" x="505" y="345" w="143" h="108" measuredW="200" measuredH="80" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>%20%0A%20%0A%201%20t%20Salt%0A%201/4%20c%20Parmesan%0A%202lbs%20Chicken</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
